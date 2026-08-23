@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
             PanelMenu = new Panel();
+            lblMenu = new Label();
             btnSalir = new Button();
             btnCostos = new Button();
             btnReportes = new Button();
@@ -38,16 +39,15 @@
             btnRegistros = new Button();
             lblNombreSistema = new Label();
             panelRegistroReservacion = new Panel();
-            panelGestionHabitaciones = new Panel();
-            panelListaReservaciones = new Panel();
-            panelReportesBasicos = new Panel();
-            panelAdministracionCostos = new Panel();
-            lblMenu = new Label();
-            panelSup1 = new Panel();
-            panelSup2 = new Panel();
-            panelSup3 = new Panel();
-            panelSup4 = new Panel();
             panel1 = new Panel();
+            panelGestionHabitaciones = new Panel();
+            panelSup4 = new Panel();
+            panelListaReservaciones = new Panel();
+            panelSup3 = new Panel();
+            panelReportesBasicos = new Panel();
+            panelSup2 = new Panel();
+            panelAdministracionCostos = new Panel();
+            panelSup1 = new Panel();
             PanelMenu.SuspendLayout();
             panelRegistroReservacion.SuspendLayout();
             panelGestionHabitaciones.SuspendLayout();
@@ -72,6 +72,20 @@
             PanelMenu.Name = "PanelMenu";
             PanelMenu.Size = new Size(187, 654);
             PanelMenu.TabIndex = 0;
+            // 
+            // lblMenu
+            // 
+            lblMenu.FlatStyle = FlatStyle.Flat;
+            lblMenu.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblMenu.ForeColor = Color.Black;
+            lblMenu.Image = (Image)resources.GetObject("lblMenu.Image");
+            lblMenu.ImageAlign = ContentAlignment.MiddleLeft;
+            lblMenu.Location = new Point(47, 61);
+            lblMenu.Name = "lblMenu";
+            lblMenu.Size = new Size(92, 23);
+            lblMenu.TabIndex = 8;
+            lblMenu.Text = "Menu";
+            lblMenu.TextAlign = ContentAlignment.MiddleRight;
             // 
             // btnSalir
             // 
@@ -144,6 +158,7 @@
             btnRegistros.TabIndex = 1;
             btnRegistros.Text = "Registro";
             btnRegistros.UseVisualStyleBackColor = true;
+            btnRegistros.Click += btnRegistros_Click;
             // 
             // lblNombreSistema
             // 
@@ -168,6 +183,14 @@
             panelRegistroReservacion.Size = new Size(839, 643);
             panelRegistroReservacion.TabIndex = 1;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(44, 62, 80);
+            panel1.Location = new Point(-1, -2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(839, 62);
+            panel1.TabIndex = 1;
+            // 
             // panelGestionHabitaciones
             // 
             panelGestionHabitaciones.BackColor = Color.FromArgb(127, 140, 141);
@@ -177,6 +200,14 @@
             panelGestionHabitaciones.Name = "panelGestionHabitaciones";
             panelGestionHabitaciones.Size = new Size(839, 643);
             panelGestionHabitaciones.TabIndex = 2;
+            // 
+            // panelSup4
+            // 
+            panelSup4.BackColor = Color.FromArgb(44, 62, 80);
+            panelSup4.Location = new Point(0, 0);
+            panelSup4.Name = "panelSup4";
+            panelSup4.Size = new Size(838, 62);
+            panelSup4.TabIndex = 1;
             // 
             // panelListaReservaciones
             // 
@@ -188,6 +219,14 @@
             panelListaReservaciones.Size = new Size(839, 643);
             panelListaReservaciones.TabIndex = 2;
             // 
+            // panelSup3
+            // 
+            panelSup3.BackColor = Color.FromArgb(44, 62, 80);
+            panelSup3.Location = new Point(-1, -1);
+            panelSup3.Name = "panelSup3";
+            panelSup3.Size = new Size(839, 62);
+            panelSup3.TabIndex = 1;
+            // 
             // panelReportesBasicos
             // 
             panelReportesBasicos.BackColor = Color.FromArgb(127, 140, 141);
@@ -197,6 +236,14 @@
             panelReportesBasicos.Name = "panelReportesBasicos";
             panelReportesBasicos.Size = new Size(839, 643);
             panelReportesBasicos.TabIndex = 2;
+            // 
+            // panelSup2
+            // 
+            panelSup2.BackColor = Color.FromArgb(44, 62, 80);
+            panelSup2.Location = new Point(-1, -1);
+            panelSup2.Name = "panelSup2";
+            panelSup2.Size = new Size(839, 62);
+            panelSup2.TabIndex = 1;
             // 
             // panelAdministracionCostos
             // 
@@ -208,20 +255,6 @@
             panelAdministracionCostos.Size = new Size(839, 643);
             panelAdministracionCostos.TabIndex = 2;
             // 
-            // lblMenu
-            // 
-            lblMenu.FlatStyle = FlatStyle.Flat;
-            lblMenu.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblMenu.ForeColor = Color.Black;
-            lblMenu.Image = (Image)resources.GetObject("lblMenu.Image");
-            lblMenu.ImageAlign = ContentAlignment.MiddleLeft;
-            lblMenu.Location = new Point(47, 61);
-            lblMenu.Name = "lblMenu";
-            lblMenu.Size = new Size(92, 23);
-            lblMenu.TabIndex = 8;
-            lblMenu.Text = "Menu";
-            lblMenu.TextAlign = ContentAlignment.MiddleRight;
-            // 
             // panelSup1
             // 
             panelSup1.BackColor = Color.FromArgb(44, 62, 80);
@@ -230,38 +263,6 @@
             panelSup1.Size = new Size(839, 62);
             panelSup1.TabIndex = 0;
             // 
-            // panelSup2
-            // 
-            panelSup2.BackColor = Color.FromArgb(44, 62, 80);
-            panelSup2.Location = new Point(-1, -1);
-            panelSup2.Name = "panelSup2";
-            panelSup2.Size = new Size(839, 62);
-            panelSup2.TabIndex = 1;
-            // 
-            // panelSup3
-            // 
-            panelSup3.BackColor = Color.FromArgb(44, 62, 80);
-            panelSup3.Location = new Point(-1, -1);
-            panelSup3.Name = "panelSup3";
-            panelSup3.Size = new Size(839, 62);
-            panelSup3.TabIndex = 1;
-            // 
-            // panelSup4
-            // 
-            panelSup4.BackColor = Color.FromArgb(44, 62, 80);
-            panelSup4.Location = new Point(0, 0);
-            panelSup4.Name = "panelSup4";
-            panelSup4.Size = new Size(838, 62);
-            panelSup4.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(44, 62, 80);
-            panel1.Location = new Point(-1, -2);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(839, 62);
-            panel1.TabIndex = 1;
-            // 
             // DashBoard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -269,8 +270,8 @@
             BackColor = Color.White;
             ClientSize = new Size(1033, 649);
             Controls.Add(panelRegistroReservacion);
-            Controls.Add(panelListaReservaciones);
             Controls.Add(panelGestionHabitaciones);
+            Controls.Add(panelListaReservaciones);
             Controls.Add(panelReportesBasicos);
             Controls.Add(panelAdministracionCostos);
             Controls.Add(PanelMenu);
