@@ -121,6 +121,7 @@
   <data name="lblMenu.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wAAADsABataJCQAAAKNJREFUWEftlcEJAjEQRR/agmIR4mIdNqBleNKDbgM2oR3YojzwNCwkata9zIO5
         vAAADrwBlbxySQAAAKNJREFUWEftlcEJAjEQRR/agmIR4mIdNqBleNKDbgM2oR3YojzwNCwkata9zIO5
         JPAy/AwMJEkyzAF4APdGpUtnFTvgCszixQ/o0qm7yA1YxcMG6NRdxC77ERLQWZWA7KecgUTmwBrYNipd
         OqtYAk/gBBwb1fntXMTHhrgAm3jYAJ26i4zVQFfbgDEZl7HFKL+tj75AJh3CRHId5zrOdZwkf+MFaMZc
@@ -130,6 +131,7 @@
   <data name="btnSalir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EAAACxABrSO9dQAAAYJJREFUWEftl7suRUEUQJdHKRENCZUfUKhR0RMkvkKn8wUKye2EH/CIRkQtNBoi
         DAAACwwBP0AiyAAAAYJJREFUWEftl7suRUEUQJdHKRENCZUfUKhR0RMkvkKn8wUKye2EH/CIRkQtNBoi
         oVBp+AOikHhkyz7Jts3MOdeZc4vLSiY3mb1n9jqPO2cGYAQ4Bl6Bj1+2d+ABWAf6aRMp7ies07Z8gTKK
         Kx8DpoAW8OgmvQc2gEk/WOkBZoEXvRvjPiFFUcTSm5DZdLmWI81Z8IEUIQGLlZErlNwJn6Tsa3zZB1KU
@@ -142,6 +144,7 @@
   <data name="btnCostos.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wQAADsEBuJFr7QAAAlhJREFUWEfFl0uKFEEQhj9cyYjgekDRhbjWm+hW76GnEF25URRE3HgA5xDuZk4w
         vAAADrwBlbxySQAAAlhJREFUWEfFl0uKFEEQhj9cyYjgekDRhbjWm+hW76GnEF25URRE3HgA5xDuZk4w
         gm9U8IWKytdEFlXpVGVk29IfJFR3ZcYfVRmPSshzCrgK3AOeAe+AnzG89j/vXYu5G+MCcB/4CvwejU/A
         YQyvx/ec+yDWrs0OcBP4EUY/xhNeAXbryfHf5ZjjXNe4Vhva6uI8cBBGPgDXgZP1pAWc6xrXakNb2kxx
@@ -158,6 +161,7 @@
   <data name="btnReportes.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wQAADsEBuJFr7QAABBJJREFUWEetl3fI7mMYxz9mViJKJ2VTknWOmVn4yyizg3Osk00yMiN7kx0hJXQO
         vAAADrwBlbxySQAABBJJREFUWEetl3fI7mMYxz9mViJKJ2VTknWOmVn4yyizg3Osk00yMiN7kx0hJXQO
         5SSOlZGRvcvMFskWEll9Tt/77T73M97f83q/dfU89++5x/d3Xd/ruu4HBmNh4GzgW+DfEexH4ApgsXbD
         UXE88BywGrDQCHYy8AdwV15iwngZ2Lp92AESuBZ4HLgxpCaEd4F124cdIIHLgGXiwSvbCV3xfwi8koNv
@@ -181,6 +185,7 @@
   <data name="btnReservaciones.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wQAADsEBuJFr7QAAAhhJREFUWEftl7FqVEEUhr/CwhdIY5sXsDEQIY0ETOErJDY2PkEKH0B8BxtBsJCU
         vAAADrwBlbxySQAAAhhJREFUWEftl7FqVEEUhr/CwhdIY5sXsDEQIY0ETOErJDY2PkEKH0B8BxtBsJCU
         qazsxBdIrESJoqIExSAaNeG7mROOh73Jyu5et/CHs8z8Z+b/z87M3jsL/XgGbFcSeAo8qWTjzFWoodZf
         4zvwtpLAF+BjJRtnrkINtc7EOrADHAK/Why1iP60eD300vPU3AG/gT3gVQv7P1M/8wpVXs5c5dXIvB72
@@ -196,6 +201,7 @@
   <data name="btnHabitaciones.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wQAADsEBuJFr7QAAArRJREFUWEftl0vIDnEUxn+5hSiSS6FcssCOUrayctmxtLBgYSOlKJeVWyxsPoSS
         vAAADrwBlbxySQAAArRJREFUWEftl0vIDnEUxn+5hSiSS6FcssCOUrayctmxtLBgYSOlKJeVWyxsPoSS
         pMglLNxioZRLFohyKZcFn0uJiC39vs58zfs3M+/M+yoLnjr1nznnPM8z7zvznzMAj4A1NMNw4BDwNeJw
         nGsCNe+7mAM8B84Co9OqEmwDrgMzIlx7rg7UOBOaavdhJHAceA3Mb60vxEGgJ3fs2nPtIPer0FLzN6wE
@@ -214,6 +220,7 @@
   <data name="btnRegistros.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wQAADsEBuJFr7QAAApFJREFUWEfNl8vLTlEUhx/3SGIiMhDiT2DgbsRM7gMGQhm4ZG7GTCmXmbGEgQkJ
         vAAADrwBlbxySQAAApFJREFUWEfNl8vLTlEUhx/3SGIiMhDiT2DgbsRM7gMGQhm4ZG7GTCmXmbGEgQkJ
         Y3KZmQklJMpAyf3ao7Vrt5z3fOd735e+p3ads/fZZ//WXmuvsw504wDwDPgK3AaW5Qf+JQeB78AJYBdw
         C3gPLMoPDpOFwNZoL2PxwiTgMXA5xjcBU6vxoXAB+BVN69ek8dPVuE0RA1F8/LN6qRZ2oRbyLWJkaX6o
@@ -228,6 +235,51 @@
         aK1HzWg34P7y+W/ti+asvA1rVQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="colIDReserva.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colCliente.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colHabitacion.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colEntrada.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colSalida.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colEstado.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colMonto.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colFecha.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colReservaciones.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colCancelaciones.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colIngresos.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colFecha.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colReservaciones.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colCancelaciones.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colIngresos.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
