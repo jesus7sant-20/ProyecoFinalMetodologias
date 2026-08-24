@@ -69,6 +69,7 @@ namespace ProyectoFinalMetodologias
         private void btnReportes_Click(object sender, EventArgs e)
         {
             panelReportesBasicos.BringToFront();
+            GenerarReportesAutomaticos(); // Actualiza los datos al abrir el panel
         }
 
         private void btnCostos_Click(object sender, EventArgs e)
@@ -78,7 +79,11 @@ namespace ProyectoFinalMetodologias
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult resultado = MessageBox.Show("¿Desea salir del sistema de hotel?", "Confirmar salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resultado == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -87,8 +92,13 @@ namespace ProyectoFinalMetodologias
             LimpiarFormulario();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         //Metodo para el boton de Regsistrar Reservacion
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtTelefono.Text) ||
                 string.IsNullOrWhiteSpace(txtCorreo.Text) || string.IsNullOrWhiteSpace(txtNumeroIdentificaion.Text) ||
@@ -224,9 +234,105 @@ namespace ProyectoFinalMetodologias
             txtNotasHuesped.Text = "";
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        // Método para cargar y refrescar la tabla de reservaciones
+        private void CargarListaReservaciones(List<cLogicaRegistros> listaAMostrar = null)
         {
+            dataGridView2.DataSource = null;
+            dataGridView2.DataSource = listaAMostrar ?? listas.listaReservaciones;
+        }
 
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            string filtroTexto = txtBuscador.Text.Trim().ToLower();
+            string estadoSeleccionado = comboBox1.SelectedItem?.ToString(); // Asumiendo comboBox1 es para filtrar por estado
+
+            var resultado = listas.listaReservaciones.Where(r =>
+                (string.IsNullOrEmpty(filtroTexto) || r.NombreCompleto.ToLower().Contains(filtroTexto) || r.NumeroIdentificacion.Contains(filtroTexto)) &&
+                (string.IsNullOrEmpty(estadoSeleccionado) || estadoSeleccionado == "Todos" || r.EstadoPago == estadoSeleccionado)
+            ).ToList();
+
+            CargarListaReservaciones(resultado);
+        }
+
+        private void btnCancelarReservacion_Click(object sender, EventArgs e)
+        {
+            if (dataGridView2.SelectedRows.Count > 0)
+            {
+                // Obtenemos el objeto seleccionado de la fila
+                var reservaSeleccionada = dataGridView2.SelectedRows[0].DataBoundItem as cLogicaRegistros;
+                if (reservaSeleccionada != null)
+                {
+                    // Liberamos la habitación asociada
+                    var habitacion = listas.listaHabitaciones.FirstOrDefault(h => h.NumeroHabitacion == reservaSeleccionada.NumHabitacion);
+                    if (habitacion != null)
+                    {
+                        habitacion.Estado = "Libre";
+                    }
+
+                    // Removemos de la lista de reservaciones activas
+                    listas.listaReservaciones.Remove(reservaSeleccionada);
+
+                    // Refrescamos las tablas
+                    CargarListaReservaciones();
+
+                    MessageBox.Show("La reservación ha sido cancelada y la habitación liberada.", "Cancelación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione una fila completa de la tabla para cancelar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void GenerarReportesAutomaticos()
+        {
+            int totalHabitaciones = listas.listaHabitaciones.Count;
+            int habitacionesOcupadas = listas.listaHabitaciones.Count(h => h.Estado == "Ocupada");
+
+            // 1. Ocupación actual (Calculada en porcentaje o texto)
+            decimal porcentajeOcupacion = totalHabitaciones > 0 ? ((decimal)habitacionesOcupadas / totalHabitaciones) * 100 : 0;
+            txtOcupacionActual.Text = $"{porcentajeOcupacion:0.0}% ({habitacionesOcupadas}/{totalHabitaciones})";
+
+            // 2. Reservaciones activas
+            int activas = listas.listaReservaciones.Count;
+            txtReservacionesActivas.Text = activas.ToString();
+
+            // 3. Cancelaciones (Simulado o basado en un contador que gestiones)
+            txtCancelaciones.Text = "0";
+
+            // 4. Ingresos del día (Suma de montos de hoy)
+            decimal ingresosHoy = listas.listaReservaciones
+                .Where(r => r.FechaEntrada.Date == DateTime.Now.Date)
+                .Sum(r => r.MontoTotal);
+            txtIngresos.Text = $"${ingresosHoy:0.00}";
+
+        }
+
+        private void btnGenerarReporte_Click(object sender, EventArgs e)
+        {
+            DateTime desde = dateTimePicker1.Value.Date;
+            DateTime hasta = dateTimePicker2.Value.Date;
+
+            if (desde > hasta)
+            {
+                MessageBox.Show("La fecha 'Desde' no puede ser mayor que la fecha 'Hasta'.", "Rango inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Filtramos las reservaciones en el rango de fechas seleccionado
+            var reporteFiltrado = listas.listaReservaciones
+                .Where(r => r.FechaEntrada.Date >= desde && r.FechaEntrada.Date <= hasta)
+                .ToList();
+
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = reporteFiltrado.Select(r => new {
+                Fecha = r.FechaEntrada.ToShortDateString(),
+                Reservaciones = r.NombreCompleto,
+                Cancelaciones = "N/A",
+                Ingresos = $"${r.MontoTotal:0.00}"
+            }).ToList();
+
+            MessageBox.Show("Reporte generado exitosamente para el rango de fechas seleccionado.", "Reporte", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
