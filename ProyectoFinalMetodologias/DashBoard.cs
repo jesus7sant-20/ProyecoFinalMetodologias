@@ -142,10 +142,6 @@ namespace ProyectoFinalMetodologias
             dgvHabitaciones.DataSource = listas.listaHabitaciones;
 
             LimpiarFormulario();
-
-            //Para llenar la tabla de reservaciones
-            //dgvReservaciones.DataSource = null;
-            //dgvReservaciones.DataSource = listas.listaReservaciones;
         }
 
         private void cmbnumeroHabitacion_SelectedIndexChanged(object sender, EventArgs e)
@@ -305,7 +301,6 @@ namespace ProyectoFinalMetodologias
                 .Where(r => r.FechaEntrada.Date == DateTime.Now.Date)
                 .Sum(r => r.MontoTotal);
             txtIngresos.Text = $"${ingresosHoy:0.00}";
-
         }
 
         private void btnGenerarReporte_Click(object sender, EventArgs e)
@@ -325,7 +320,8 @@ namespace ProyectoFinalMetodologias
                 .ToList();
 
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = reporteFiltrado.Select(r => new {
+            dataGridView1.DataSource = reporteFiltrado.Select(r => new
+            {
                 Fecha = r.FechaEntrada.ToShortDateString(),
                 Reservaciones = r.NombreCompleto,
                 Cancelaciones = "N/A",
@@ -333,6 +329,59 @@ namespace ProyectoFinalMetodologias
             }).ToList();
 
             MessageBox.Show("Reporte generado exitosamente para el rango de fechas seleccionado.", "Reporte", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelAdministracionCostos_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        // --- Lógica del módulo Administración de Costos ---
+
+        // 1. Al tocar una celda/fila de la tabla de costos (dataGridView3)
+        private void dataGridView3_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow fila = dataGridView3.Rows[e.RowIndex];
+
+                if (fila.Cells[0].Value != null)
+                {
+                    txtHabitacionSeleccionada.Text = fila.Cells[0].Value.ToString();
+                }
+
+                if (fila.Cells[1].Value != null)
+                {
+                    txtNuevoPrecio.Text = fila.Cells[1].Value.ToString();
+                }
+            }
+        }
+
+        // 2. Evento del botón "Actualizar Precio" (actualprecio)
+        private void actualprecio_Click(object sender, EventArgs e)
+        {
+            if (dataGridView3.CurrentRow != null && !string.IsNullOrEmpty(txtNuevoPrecio.Text))
+            {
+                dataGridView3.CurrentRow.Cells[1].Value = txtNuevoPrecio.Text;
+                MessageBox.Show("Precio actualizado correctamente en la tabla.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Selecciona una habitación de la tabla primero.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        // 3. Evento del botón "Cancelar" (cancelar)
+        private void cancelar_Click(object sender, EventArgs e)
+        {
+            txtHabitacionSeleccionada.Clear();
+            txtNuevoPrecio.Clear();
+            dataGridView3.ClearSelection();
         }
     }
 }
