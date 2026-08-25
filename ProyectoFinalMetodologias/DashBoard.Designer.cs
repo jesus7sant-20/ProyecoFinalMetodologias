@@ -39,62 +39,25 @@
             btnRegistros = new Button();
             lblNombreSistema = new Label();
             panelRegistroReservacion = new Panel();
-            panel1 = new Panel();
-            panelGestionHabitaciones = new Panel();
-            panelSup4 = new Panel();
-            panelListaReservaciones = new Panel();
-            panelSup3 = new Panel();
-            panelReportesBasicos = new Panel();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            panelSup2 = new Panel();
-            label1 = new Label();
-            panelAdministracionCostos = new Panel();
-            panelSup1 = new Panel();
-            label6 = new Label();
-            label7 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            dateTimePicker2 = new DateTimePicker();
-            button1 = new Button();
-            button2 = new Button();
-            dataGridView1 = new DataGridView();
-            colFecha = new DataGridViewTextBoxColumn();
-            colReservaciones = new DataGridViewTextBoxColumn();
-            colCancelaciones = new DataGridViewTextBoxColumn();
-            colIngresos = new DataGridViewTextBoxColumn();
-            txtOcupacionActual = new TextBox();
-            txtReservacionesActivas = new TextBox();
-            txtCancelaciones = new TextBox();
-            txtIngresos = new TextBox();
-            label8 = new Label();
-            txtBuscador = new TextBox();
-            btnBuscar = new Button();
-            label9 = new Label();
-            label10 = new Label();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            dataGridView2 = new DataGridView();
-            btnEditar = new Button();
-            btnCancelarReservacion = new Button();
-            btnExportarExcel2 = new Button();
-            colIDReserva = new DataGridViewTextBoxColumn();
-            colCliente = new DataGridViewTextBoxColumn();
-            colHabitacion = new DataGridViewTextBoxColumn();
-            colEntrada = new DataGridViewTextBoxColumn();
-            colSalida = new DataGridViewTextBoxColumn();
-            colEstado = new DataGridViewTextBoxColumn();
-            colMonto = new DataGridViewTextBoxColumn();
-            label21 = new Label();
+            lblNoINEPasaporte2 = new Label();
+            lblTipoIdentificacion2 = new Label();
+            lblCorreo2 = new Label();
+            lblTelefono2 = new Label();
+            lblNombreCompleto2 = new Label();
+            lblPago = new Label();
+            lblEstado2 = new Label();
+            lblNoHabitacion2 = new Label();
+            lblTipoHabitacion2 = new Label();
+            lblDatosDelHuesped = new Label();
+            lblEstadoPago2 = new Label();
             txtTipoHabitacion = new TextBox();
             cmbEstadoPago = new ComboBox();
             txtNumNoches = new TextBox();
-            label20 = new Label();
+            lblNoNoches2 = new Label();
             dateFechaSalida = new DateTimePicker();
             dateFechaEntrada = new DateTimePicker();
-            label19 = new Label();
-            label15 = new Label();
+            lblFechaEntrada2 = new Label();
+            lblFechaSalida2 = new Label();
             btnCancelar = new Button();
             btnRegistrar = new Button();
             txtNotasHuesped = new TextBox();
@@ -102,38 +65,66 @@
             txtEstado = new TextBox();
             txtMontoTotal = new TextBox();
             cmbMetodoPago = new ComboBox();
-            label18 = new Label();
-            label17 = new Label();
-            label16 = new Label();
-            label14 = new Label();
-            label13 = new Label();
-            label10 = new Label();
+            lblSolicitudesEspeciales2 = new Label();
+            lblNotasHuesped2 = new Label();
+            lblMontoTotal2 = new Label();
+            lblMontoDePago2 = new Label();
+            lblOperacionesAdicionales = new Label();
             cmbnumeroHabitacion = new ComboBox();
-            label12 = new Label();
+            lblDatosDeHabitacion = new Label();
             cmbTipoIdentifiacion = new ComboBox();
             txtNumeroIdentificaion = new TextBox();
-            label11 = new Label();
-            label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
             txtCorreo = new TextBox();
             txtTelefono = new TextBox();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
             txtNombre = new TextBox();
-            label2 = new Label();
             panel1 = new Panel();
-            label1 = new Label();
+            lblFormularioRegistroReservaciones = new Label();
             panelGestionHabitaciones = new Panel();
             dgvHabitaciones = new DataGridView();
             panelSup4 = new Panel();
-            label22 = new Label();
+            lblListasHabitaciones = new Label();
             panelListaReservaciones = new Panel();
+            lblFiltrarFecha2 = new Label();
+            lblFiltrarEstado2 = new Label();
+            btnExportarExcel2 = new Button();
+            btnCancelarReservacion = new Button();
+            btnEditar = new Button();
+            dataGridView2 = new DataGridView();
+            colIDReserva = new DataGridViewTextBoxColumn();
+            colCliente = new DataGridViewTextBoxColumn();
+            colHabitacion = new DataGridViewTextBoxColumn();
+            colEntrada = new DataGridViewTextBoxColumn();
+            colSalida = new DataGridViewTextBoxColumn();
+            colEstado = new DataGridViewTextBoxColumn();
+            colMonto = new DataGridViewTextBoxColumn();
+            comboBox2 = new ComboBox();
+            comboBox1 = new ComboBox();
+            btnBuscar = new Button();
+            txtBuscador = new TextBox();
             panelSup3 = new Panel();
+            lblListaDeReservaciones = new Label();
             panelReportesBasicos = new Panel();
+            lblIngresosDia2 = new Label();
+            lblCancelaciones2 = new Label();
+            lblHasta2 = new Label();
+            lblDesde2 = new Label();
+            lblReservacionesActivas2 = new Label();
+            lblOcupacionActual2 = new Label();
+            txtIngresos = new TextBox();
+            txtCancelaciones = new TextBox();
+            txtReservacionesActivas = new TextBox();
+            txtOcupacionActual = new TextBox();
+            dataGridView1 = new DataGridView();
+            colFecha = new DataGridViewTextBoxColumn();
+            colReservaciones = new DataGridViewTextBoxColumn();
+            colCancelaciones = new DataGridViewTextBoxColumn();
+            colIngresos = new DataGridViewTextBoxColumn();
+            btnExportarExcel = new Button();
+            btnGenerarReporte = new Button();
+            dateTimePicker2 = new DateTimePicker();
+            dateTimePicker1 = new DateTimePicker();
             panelSup2 = new Panel();
+            lblReportesBasicos = new Label();
             panelAdministracionCostos = new Panel();
             panelSup1 = new Panel();
             PanelMenu.SuspendLayout();
@@ -143,12 +134,12 @@
             ((System.ComponentModel.ISupportInitialize)dgvHabitaciones).BeginInit();
             panelSup4.SuspendLayout();
             panelListaReservaciones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             panelSup3.SuspendLayout();
             panelReportesBasicos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panelSup2.SuspendLayout();
             panelAdministracionCostos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
             // PanelMenu
@@ -173,7 +164,6 @@
             lblMenu.FlatStyle = FlatStyle.Flat;
             lblMenu.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblMenu.ForeColor = Color.Black;
-            lblMenu.Image = (Image)resources.GetObject("lblMenu.Image");
             lblMenu.ImageAlign = ContentAlignment.MiddleLeft;
             lblMenu.Location = new Point(47, 61);
             lblMenu.Name = "lblMenu";
@@ -185,7 +175,6 @@
             // btnSalir
             // 
             btnSalir.FlatStyle = FlatStyle.Flat;
-            btnSalir.Image = (Image)resources.GetObject("btnSalir.Image");
             btnSalir.ImageAlign = ContentAlignment.MiddleLeft;
             btnSalir.Location = new Point(13, 587);
             btnSalir.Name = "btnSalir";
@@ -198,7 +187,6 @@
             // btnCostos
             // 
             btnCostos.FlatStyle = FlatStyle.Flat;
-            btnCostos.Image = (Image)resources.GetObject("btnCostos.Image");
             btnCostos.ImageAlign = ContentAlignment.MiddleLeft;
             btnCostos.Location = new Point(13, 378);
             btnCostos.Name = "btnCostos";
@@ -211,7 +199,6 @@
             // btnReportes
             // 
             btnReportes.FlatStyle = FlatStyle.Flat;
-            btnReportes.Image = (Image)resources.GetObject("btnReportes.Image");
             btnReportes.ImageAlign = ContentAlignment.MiddleLeft;
             btnReportes.Location = new Point(13, 310);
             btnReportes.Name = "btnReportes";
@@ -224,7 +211,6 @@
             // btnReservaciones
             // 
             btnReservaciones.FlatStyle = FlatStyle.Flat;
-            btnReservaciones.Image = (Image)resources.GetObject("btnReservaciones.Image");
             btnReservaciones.ImageAlign = ContentAlignment.MiddleLeft;
             btnReservaciones.Location = new Point(13, 240);
             btnReservaciones.Name = "btnReservaciones";
@@ -237,7 +223,6 @@
             // btnHabitaciones
             // 
             btnHabitaciones.FlatStyle = FlatStyle.Flat;
-            btnHabitaciones.Image = (Image)resources.GetObject("btnHabitaciones.Image");
             btnHabitaciones.ImageAlign = ContentAlignment.MiddleLeft;
             btnHabitaciones.Location = new Point(13, 170);
             btnHabitaciones.Name = "btnHabitaciones";
@@ -250,7 +235,6 @@
             // btnRegistros
             // 
             btnRegistros.FlatStyle = FlatStyle.Flat;
-            btnRegistros.Image = (Image)resources.GetObject("btnRegistros.Image");
             btnRegistros.ImageAlign = ContentAlignment.MiddleLeft;
             btnRegistros.Location = new Point(13, 104);
             btnRegistros.Name = "btnRegistros";
@@ -277,15 +261,25 @@
             // 
             panelRegistroReservacion.BackColor = Color.FromArgb(127, 140, 141);
             panelRegistroReservacion.BorderStyle = BorderStyle.FixedSingle;
-            panelRegistroReservacion.Controls.Add(label21);
+            panelRegistroReservacion.Controls.Add(lblNoINEPasaporte2);
+            panelRegistroReservacion.Controls.Add(lblTipoIdentificacion2);
+            panelRegistroReservacion.Controls.Add(lblCorreo2);
+            panelRegistroReservacion.Controls.Add(lblTelefono2);
+            panelRegistroReservacion.Controls.Add(lblNombreCompleto2);
+            panelRegistroReservacion.Controls.Add(lblPago);
+            panelRegistroReservacion.Controls.Add(lblEstado2);
+            panelRegistroReservacion.Controls.Add(lblNoHabitacion2);
+            panelRegistroReservacion.Controls.Add(lblTipoHabitacion2);
+            panelRegistroReservacion.Controls.Add(lblDatosDelHuesped);
+            panelRegistroReservacion.Controls.Add(lblEstadoPago2);
             panelRegistroReservacion.Controls.Add(txtTipoHabitacion);
             panelRegistroReservacion.Controls.Add(cmbEstadoPago);
             panelRegistroReservacion.Controls.Add(txtNumNoches);
-            panelRegistroReservacion.Controls.Add(label20);
+            panelRegistroReservacion.Controls.Add(lblNoNoches2);
             panelRegistroReservacion.Controls.Add(dateFechaSalida);
             panelRegistroReservacion.Controls.Add(dateFechaEntrada);
-            panelRegistroReservacion.Controls.Add(label19);
-            panelRegistroReservacion.Controls.Add(label15);
+            panelRegistroReservacion.Controls.Add(lblFechaEntrada2);
+            panelRegistroReservacion.Controls.Add(lblFechaSalida2);
             panelRegistroReservacion.Controls.Add(btnCancelar);
             panelRegistroReservacion.Controls.Add(btnRegistrar);
             panelRegistroReservacion.Controls.Add(txtNotasHuesped);
@@ -293,46 +287,139 @@
             panelRegistroReservacion.Controls.Add(txtEstado);
             panelRegistroReservacion.Controls.Add(txtMontoTotal);
             panelRegistroReservacion.Controls.Add(cmbMetodoPago);
-            panelRegistroReservacion.Controls.Add(label18);
-            panelRegistroReservacion.Controls.Add(label17);
-            panelRegistroReservacion.Controls.Add(label16);
-            panelRegistroReservacion.Controls.Add(label14);
-            panelRegistroReservacion.Controls.Add(label13);
-            panelRegistroReservacion.Controls.Add(label10);
+            panelRegistroReservacion.Controls.Add(lblSolicitudesEspeciales2);
+            panelRegistroReservacion.Controls.Add(lblNotasHuesped2);
+            panelRegistroReservacion.Controls.Add(lblMontoTotal2);
+            panelRegistroReservacion.Controls.Add(lblMontoDePago2);
+            panelRegistroReservacion.Controls.Add(lblOperacionesAdicionales);
             panelRegistroReservacion.Controls.Add(cmbnumeroHabitacion);
-            panelRegistroReservacion.Controls.Add(label12);
+            panelRegistroReservacion.Controls.Add(lblDatosDeHabitacion);
             panelRegistroReservacion.Controls.Add(cmbTipoIdentifiacion);
             panelRegistroReservacion.Controls.Add(txtNumeroIdentificaion);
-            panelRegistroReservacion.Controls.Add(label11);
-            panelRegistroReservacion.Controls.Add(label9);
-            panelRegistroReservacion.Controls.Add(label8);
-            panelRegistroReservacion.Controls.Add(label7);
             panelRegistroReservacion.Controls.Add(txtCorreo);
             panelRegistroReservacion.Controls.Add(txtTelefono);
-            panelRegistroReservacion.Controls.Add(label6);
-            panelRegistroReservacion.Controls.Add(label5);
-            panelRegistroReservacion.Controls.Add(label4);
-            panelRegistroReservacion.Controls.Add(label3);
             panelRegistroReservacion.Controls.Add(txtNombre);
-            panelRegistroReservacion.Controls.Add(label2);
             panelRegistroReservacion.Controls.Add(panel1);
             panelRegistroReservacion.Location = new Point(194, 3);
             panelRegistroReservacion.Name = "panelRegistroReservacion";
             panelRegistroReservacion.Size = new Size(839, 643);
             panelRegistroReservacion.TabIndex = 1;
             // 
-            // panel1
+            // lblNoINEPasaporte2
             // 
-            panel1.BackColor = Color.FromArgb(44, 62, 80);
-            // label21
+            lblNoINEPasaporte2.AutoSize = true;
+            lblNoINEPasaporte2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNoINEPasaporte2.Location = new Point(8, 296);
+            lblNoINEPasaporte2.Name = "lblNoINEPasaporte2";
+            lblNoINEPasaporte2.Size = new Size(178, 21);
+            lblNoINEPasaporte2.TabIndex = 52;
+            lblNoINEPasaporte2.Text = "No. INE / Pasaporte: ";
             // 
-            label21.AutoSize = true;
-            label21.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label21.Location = new Point(22, 534);
-            label21.Name = "label21";
-            label21.Size = new Size(128, 21);
-            label21.TabIndex = 42;
-            label21.Text = "Estado de Pago:";
+            // lblTipoIdentificacion2
+            // 
+            lblTipoIdentificacion2.AutoSize = true;
+            lblTipoIdentificacion2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTipoIdentificacion2.Location = new Point(6, 250);
+            lblTipoIdentificacion2.Name = "lblTipoIdentificacion2";
+            lblTipoIdentificacion2.Size = new Size(185, 21);
+            lblTipoIdentificacion2.TabIndex = 51;
+            lblTipoIdentificacion2.Text = "Tipo de Identificacion: ";
+            // 
+            // lblCorreo2
+            // 
+            lblCorreo2.AutoSize = true;
+            lblCorreo2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblCorreo2.Location = new Point(53, 205);
+            lblCorreo2.Name = "lblCorreo2";
+            lblCorreo2.Size = new Size(71, 21);
+            lblCorreo2.TabIndex = 50;
+            lblCorreo2.Text = "Correo: ";
+            // 
+            // lblTelefono2
+            // 
+            lblTelefono2.AutoSize = true;
+            lblTelefono2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTelefono2.Location = new Point(44, 160);
+            lblTelefono2.Name = "lblTelefono2";
+            lblTelefono2.Size = new Size(86, 21);
+            lblTelefono2.TabIndex = 49;
+            lblTelefono2.Text = "Telefono: ";
+            // 
+            // lblNombreCompleto2
+            // 
+            lblNombreCompleto2.AutoSize = true;
+            lblNombreCompleto2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNombreCompleto2.Location = new Point(15, 115);
+            lblNombreCompleto2.Name = "lblNombreCompleto2";
+            lblNombreCompleto2.Size = new Size(151, 21);
+            lblNombreCompleto2.TabIndex = 48;
+            lblNombreCompleto2.Text = "Nombre Completo: ";
+            // 
+            // lblPago
+            // 
+            lblPago.AutoSize = true;
+            lblPago.BackColor = Color.Transparent;
+            lblPago.FlatStyle = FlatStyle.Popup;
+            lblPago.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPago.ForeColor = Color.Black;
+            lblPago.Location = new Point(156, 399);
+            lblPago.Name = "lblPago";
+            lblPago.Size = new Size(59, 23);
+            lblPago.TabIndex = 47;
+            lblPago.Text = "Pago:";
+            // 
+            // lblEstado2
+            // 
+            lblEstado2.AutoSize = true;
+            lblEstado2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblEstado2.Location = new Point(491, 205);
+            lblEstado2.Name = "lblEstado2";
+            lblEstado2.Size = new Size(72, 21);
+            lblEstado2.TabIndex = 46;
+            lblEstado2.Text = "Estado: ";
+            // 
+            // lblNoHabitacion2
+            // 
+            lblNoHabitacion2.AutoSize = true;
+            lblNoHabitacion2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNoHabitacion2.Location = new Point(465, 163);
+            lblNoHabitacion2.Name = "lblNoHabitacion2";
+            lblNoHabitacion2.Size = new Size(134, 21);
+            lblNoHabitacion2.TabIndex = 45;
+            lblNoHabitacion2.Text = "No. Habitacion: ";
+            // 
+            // lblTipoHabitacion2
+            // 
+            lblTipoHabitacion2.AutoSize = true;
+            lblTipoHabitacion2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTipoHabitacion2.Location = new Point(465, 117);
+            lblTipoHabitacion2.Name = "lblTipoHabitacion2";
+            lblTipoHabitacion2.Size = new Size(137, 21);
+            lblTipoHabitacion2.TabIndex = 44;
+            lblTipoHabitacion2.Text = "Tipo Habitacion: ";
+            // 
+            // lblDatosDelHuesped
+            // 
+            lblDatosDelHuesped.AutoSize = true;
+            lblDatosDelHuesped.BackColor = Color.Transparent;
+            lblDatosDelHuesped.FlatStyle = FlatStyle.Popup;
+            lblDatosDelHuesped.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblDatosDelHuesped.ForeColor = Color.Black;
+            lblDatosDelHuesped.Location = new Point(112, 82);
+            lblDatosDelHuesped.Name = "lblDatosDelHuesped";
+            lblDatosDelHuesped.Size = new Size(179, 23);
+            lblDatosDelHuesped.TabIndex = 43;
+            lblDatosDelHuesped.Text = "Datos del Huesped:";
+            // 
+            // lblEstadoPago2
+            // 
+            lblEstadoPago2.AutoSize = true;
+            lblEstadoPago2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblEstadoPago2.Location = new Point(39, 550);
+            lblEstadoPago2.Name = "lblEstadoPago2";
+            lblEstadoPago2.Size = new Size(128, 21);
+            lblEstadoPago2.TabIndex = 42;
+            lblEstadoPago2.Text = "Estado de Pago:";
             // 
             // txtTipoHabitacion
             // 
@@ -346,7 +433,7 @@
             // 
             cmbEstadoPago.FormattingEnabled = true;
             cmbEstadoPago.Items.AddRange(new object[] { "Pagado", "Pendiente" });
-            cmbEstadoPago.Location = new Point(167, 533);
+            cmbEstadoPago.Location = new Point(184, 549);
             cmbEstadoPago.Name = "cmbEstadoPago";
             cmbEstadoPago.Size = new Size(166, 23);
             cmbEstadoPago.TabIndex = 41;
@@ -354,24 +441,24 @@
             // txtNumNoches
             // 
             txtNumNoches.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtNumNoches.Location = new Point(619, 335);
+            txtNumNoches.Location = new Point(664, 326);
             txtNumNoches.Name = "txtNumNoches";
             txtNumNoches.Size = new Size(84, 23);
             txtNumNoches.TabIndex = 40;
             // 
-            // label20
+            // lblNoNoches2
             // 
-            label20.AutoSize = true;
-            label20.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label20.Location = new Point(460, 337);
-            label20.Name = "label20";
-            label20.Size = new Size(155, 21);
-            label20.TabIndex = 39;
-            label20.Text = "Numero de Noches:";
+            lblNoNoches2.AutoSize = true;
+            lblNoNoches2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNoNoches2.Location = new Point(505, 328);
+            lblNoNoches2.Name = "lblNoNoches2";
+            lblNoNoches2.Size = new Size(155, 21);
+            lblNoNoches2.TabIndex = 39;
+            lblNoNoches2.Text = "Numero de Noches:";
             // 
             // dateFechaSalida
             // 
-            dateFechaSalida.Location = new Point(587, 294);
+            dateFechaSalida.Location = new Point(587, 288);
             dateFechaSalida.Name = "dateFechaSalida";
             dateFechaSalida.Size = new Size(200, 23);
             dateFechaSalida.TabIndex = 38;
@@ -379,31 +466,31 @@
             // 
             // dateFechaEntrada
             // 
-            dateFechaEntrada.Location = new Point(587, 254);
+            dateFechaEntrada.Location = new Point(587, 248);
             dateFechaEntrada.Name = "dateFechaEntrada";
             dateFechaEntrada.Size = new Size(200, 23);
             dateFechaEntrada.TabIndex = 37;
             dateFechaEntrada.ValueChanged += dateFechaEntrada_ValueChanged;
             // 
-            // label19
+            // lblFechaEntrada2
             // 
-            label19.AutoSize = true;
-            label19.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label19.Location = new Point(460, 256);
-            label19.Name = "label19";
-            label19.Size = new Size(122, 21);
-            label19.TabIndex = 36;
-            label19.Text = "Fecha Entrada:";
+            lblFechaEntrada2.AutoSize = true;
+            lblFechaEntrada2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblFechaEntrada2.Location = new Point(460, 250);
+            lblFechaEntrada2.Name = "lblFechaEntrada2";
+            lblFechaEntrada2.Size = new Size(122, 21);
+            lblFechaEntrada2.TabIndex = 36;
+            lblFechaEntrada2.Text = "Fecha Entrada:";
             // 
-            // label15
+            // lblFechaSalida2
             // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label15.Location = new Point(460, 298);
-            label15.Name = "label15";
-            label15.Size = new Size(109, 21);
-            label15.TabIndex = 35;
-            label15.Text = "Fecha Salida:";
+            lblFechaSalida2.AutoSize = true;
+            lblFechaSalida2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblFechaSalida2.Location = new Point(460, 292);
+            lblFechaSalida2.Name = "lblFechaSalida2";
+            lblFechaSalida2.Size = new Size(109, 21);
+            lblFechaSalida2.TabIndex = 35;
+            lblFechaSalida2.Text = "Fecha Salida:";
             // 
             // btnCancelar
             // 
@@ -416,7 +503,6 @@
             btnCancelar.TabIndex = 34;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
-            btnCancelar.Click += button2_Click;
             // 
             // btnRegistrar
             // 
@@ -429,12 +515,12 @@
             btnRegistrar.TabIndex = 33;
             btnRegistrar.Text = "Registrar";
             btnRegistrar.UseVisualStyleBackColor = false;
-            btnRegistrar.Click += button1_Click;
+            btnRegistrar.Click += Button1_Click;
             // 
             // txtNotasHuesped
             // 
             txtNotasHuesped.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtNotasHuesped.Location = new Point(451, 540);
+            txtNotasHuesped.Location = new Point(453, 532);
             txtNotasHuesped.Multiline = true;
             txtNotasHuesped.Name = "txtNotasHuesped";
             txtNotasHuesped.Size = new Size(319, 40);
@@ -443,7 +529,7 @@
             // txtSolicitudesEspeciales
             // 
             txtSolicitudesEspeciales.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtSolicitudesEspeciales.Location = new Point(449, 458);
+            txtSolicitudesEspeciales.Location = new Point(451, 450);
             txtSolicitudesEspeciales.Multiline = true;
             txtSolicitudesEspeciales.Name = "txtSolicitudesEspeciales";
             txtSolicitudesEspeciales.Size = new Size(319, 41);
@@ -452,7 +538,7 @@
             // txtEstado
             // 
             txtEstado.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtEstado.Location = new Point(657, 206);
+            txtEstado.Location = new Point(630, 203);
             txtEstado.Name = "txtEstado";
             txtEstado.Size = new Size(140, 23);
             txtEstado.TabIndex = 30;
@@ -460,7 +546,7 @@
             // txtMontoTotal
             // 
             txtMontoTotal.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtMontoTotal.Location = new Point(167, 482);
+            txtMontoTotal.Location = new Point(184, 498);
             txtMontoTotal.Name = "txtMontoTotal";
             txtMontoTotal.Size = new Size(140, 23);
             txtMontoTotal.TabIndex = 28;
@@ -469,76 +555,63 @@
             // 
             cmbMetodoPago.FormattingEnabled = true;
             cmbMetodoPago.Items.AddRange(new object[] { "Efectivo", "Tarjeta", "Transferencia" });
-            cmbMetodoPago.Location = new Point(161, 431);
+            cmbMetodoPago.Location = new Point(178, 447);
             cmbMetodoPago.Name = "cmbMetodoPago";
             cmbMetodoPago.Size = new Size(166, 23);
             cmbMetodoPago.TabIndex = 27;
             // 
-            // label18
+            // lblSolicitudesEspeciales2
             // 
-            label18.AutoSize = true;
-            label18.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label18.Location = new Point(443, 434);
-            label18.Name = "label18";
-            label18.Size = new Size(172, 21);
-            label18.TabIndex = 26;
-            label18.Text = "Solicitudes Especiales:";
+            lblSolicitudesEspeciales2.AutoSize = true;
+            lblSolicitudesEspeciales2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblSolicitudesEspeciales2.Location = new Point(445, 426);
+            lblSolicitudesEspeciales2.Name = "lblSolicitudesEspeciales2";
+            lblSolicitudesEspeciales2.Size = new Size(172, 21);
+            lblSolicitudesEspeciales2.TabIndex = 26;
+            lblSolicitudesEspeciales2.Text = "Solicitudes Especiales:";
             // 
-            // label17
+            // lblNotasHuesped2
             // 
-            label17.AutoSize = true;
-            label17.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label17.Location = new Point(449, 512);
-            label17.Name = "label17";
-            label17.Size = new Size(150, 21);
-            label17.TabIndex = 25;
-            label17.Text = "Notas de Huesped:";
+            lblNotasHuesped2.AutoSize = true;
+            lblNotasHuesped2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNotasHuesped2.Location = new Point(451, 504);
+            lblNotasHuesped2.Name = "lblNotasHuesped2";
+            lblNotasHuesped2.Size = new Size(150, 21);
+            lblNotasHuesped2.TabIndex = 25;
+            lblNotasHuesped2.Text = "Notas de Huesped:";
             // 
-            // label16
+            // lblMontoTotal2
             // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label16.Location = new Point(22, 484);
-            label16.Name = "label16";
-            label16.Size = new Size(136, 21);
-            label16.TabIndex = 24;
-            label16.Text = "Monto Total:   $";
+            lblMontoTotal2.AutoSize = true;
+            lblMontoTotal2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblMontoTotal2.Location = new Point(39, 500);
+            lblMontoTotal2.Name = "lblMontoTotal2";
+            lblMontoTotal2.Size = new Size(136, 21);
+            lblMontoTotal2.TabIndex = 24;
+            lblMontoTotal2.Text = "Monto Total:   $";
             // 
-            // label14
+            // lblMontoDePago2
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.Location = new Point(22, 429);
-            label14.Name = "label14";
-            label14.Size = new Size(133, 21);
-            label14.TabIndex = 22;
-            label14.Text = "Metodo de Pago:";
+            lblMontoDePago2.AutoSize = true;
+            lblMontoDePago2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblMontoDePago2.Location = new Point(39, 445);
+            lblMontoDePago2.Name = "lblMontoDePago2";
+            lblMontoDePago2.Size = new Size(133, 21);
+            lblMontoDePago2.TabIndex = 22;
+            lblMontoDePago2.Text = "Metodo de Pago:";
             // 
-            // label13
+            // lblOperacionesAdicionales
             // 
-            label13.AutoSize = true;
-            label13.BackColor = Color.Transparent;
-            label13.FlatStyle = FlatStyle.Popup;
-            label13.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.ForeColor = Color.Black;
-            label13.Location = new Point(532, 385);
-            label13.Name = "label13";
-            label13.Size = new Size(199, 23);
-            label13.TabIndex = 21;
-            label13.Text = "Opciones Adicionales:";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.BackColor = Color.Transparent;
-            label10.FlatStyle = FlatStyle.Popup;
-            label10.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.ForeColor = Color.Black;
-            label10.Location = new Point(155, 382);
-            label10.Name = "label10";
-            label10.Size = new Size(59, 23);
-            label10.TabIndex = 20;
-            label10.Text = "Pago:";
+            lblOperacionesAdicionales.AutoSize = true;
+            lblOperacionesAdicionales.BackColor = Color.Transparent;
+            lblOperacionesAdicionales.FlatStyle = FlatStyle.Popup;
+            lblOperacionesAdicionales.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblOperacionesAdicionales.ForeColor = Color.Black;
+            lblOperacionesAdicionales.Location = new Point(514, 399);
+            lblOperacionesAdicionales.Name = "lblOperacionesAdicionales";
+            lblOperacionesAdicionales.Size = new Size(199, 23);
+            lblOperacionesAdicionales.TabIndex = 21;
+            lblOperacionesAdicionales.Text = "Opciones Adicionales:";
             // 
             // cmbnumeroHabitacion
             // 
@@ -549,18 +622,18 @@
             cmbnumeroHabitacion.TabIndex = 18;
             cmbnumeroHabitacion.SelectedIndexChanged += cmbnumeroHabitacion_SelectedIndexChanged;
             // 
-            // label12
+            // lblDatosDeHabitacion
             // 
-            label12.AutoSize = true;
-            label12.BackColor = Color.Transparent;
-            label12.FlatStyle = FlatStyle.Popup;
-            label12.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.ForeColor = Color.Black;
-            label12.Location = new Point(532, 82);
-            label12.Name = "label12";
-            label12.Size = new Size(215, 23);
-            label12.TabIndex = 16;
-            label12.Text = "Datos de la Habitacion:";
+            lblDatosDeHabitacion.AutoSize = true;
+            lblDatosDeHabitacion.BackColor = Color.Transparent;
+            lblDatosDeHabitacion.FlatStyle = FlatStyle.Popup;
+            lblDatosDeHabitacion.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblDatosDeHabitacion.ForeColor = Color.Black;
+            lblDatosDeHabitacion.Location = new Point(532, 82);
+            lblDatosDeHabitacion.Name = "lblDatosDeHabitacion";
+            lblDatosDeHabitacion.Size = new Size(215, 23);
+            lblDatosDeHabitacion.TabIndex = 16;
+            lblDatosDeHabitacion.Text = "Datos de la Habitacion:";
             // 
             // cmbTipoIdentifiacion
             // 
@@ -574,53 +647,10 @@
             // txtNumeroIdentificaion
             // 
             txtNumeroIdentificaion.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtNumeroIdentificaion.Location = new Point(220, 295);
+            txtNumeroIdentificaion.Location = new Point(197, 294);
             txtNumeroIdentificaion.Name = "txtNumeroIdentificaion";
             txtNumeroIdentificaion.Size = new Size(200, 23);
             txtNumeroIdentificaion.TabIndex = 14;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.Location = new Point(460, 209);
-            label11.Name = "label11";
-            label11.Size = new Size(191, 21);
-            label11.TabIndex = 13;
-            label11.Text = "Estado de la Habitacion:";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(460, 166);
-            label9.Name = "label9";
-            label9.Size = new Size(155, 21);
-            label9.TabIndex = 11;
-            label9.Text = "Numero Habitacion:";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(469, 124);
-            label8.Name = "label8";
-            label8.Size = new Size(130, 21);
-            label8.TabIndex = 10;
-            label8.Text = "Tipo Habitacion:";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.Transparent;
-            label7.FlatStyle = FlatStyle.Popup;
-            label7.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.Black;
-            label7.Location = new Point(117, 82);
-            label7.Name = "label7";
-            label7.Size = new Size(179, 23);
-            label7.TabIndex = 9;
-            label7.Text = "Datos del Huesped:";
             // 
             // txtCorreo
             // 
@@ -638,47 +668,6 @@
             txtTelefono.Size = new Size(200, 23);
             txtTelefono.TabIndex = 8;
             // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(22, 293);
-            label6.Name = "label6";
-            label6.Size = new Size(192, 21);
-            label6.TabIndex = 7;
-            label6.Text = "Numero INE/ Pasaporte:";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = SystemColors.ActiveCaptionText;
-            label5.Location = new Point(22, 246);
-            label5.Name = "label5";
-            label5.Size = new Size(170, 21);
-            label5.TabIndex = 6;
-            label5.Text = "Tipo de Identifiacion:";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(79, 201);
-            label4.Name = "label4";
-            label4.Size = new Size(57, 21);
-            label4.TabIndex = 5;
-            label4.Text = "Correo";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(67, 160);
-            label3.Name = "label3";
-            label3.Size = new Size(79, 21);
-            label3.TabIndex = 4;
-            label3.Text = "Telefono:";
-            // 
             // txtNombre
             // 
             txtNombre.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -687,39 +676,27 @@
             txtNombre.Size = new Size(200, 23);
             txtNombre.TabIndex = 3;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(34, 117);
-            label2.Name = "label2";
-            label2.Size = new Size(144, 21);
-            label2.TabIndex = 2;
-            label2.Text = "Nombre Completo:";
-            // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(44, 62, 80);
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(lblFormularioRegistroReservaciones);
             panel1.Location = new Point(-1, -2);
             panel1.Name = "panel1";
             panel1.Size = new Size(839, 62);
             panel1.TabIndex = 1;
             // 
-            // label1
+            // lblFormularioRegistroReservaciones
             // 
-            label1.BackColor = Color.Transparent;
-            label1.FlatStyle = FlatStyle.Popup;
-            label1.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Black;
-            label1.Image = (Image)resources.GetObject("label1.Image");
-            label1.ImageAlign = ContentAlignment.MiddleLeft;
-            label1.Location = new Point(16, 7);
-            label1.Name = "label1";
-            label1.Size = new Size(482, 44);
-            label1.TabIndex = 9;
-            label1.Text = "FORMUALRIO DE REGISTRO DE RESERVACIONES";
-            label1.TextAlign = ContentAlignment.MiddleRight;
+            lblFormularioRegistroReservaciones.AutoSize = true;
+            lblFormularioRegistroReservaciones.BackColor = Color.Transparent;
+            lblFormularioRegistroReservaciones.FlatStyle = FlatStyle.Popup;
+            lblFormularioRegistroReservaciones.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblFormularioRegistroReservaciones.ForeColor = Color.Black;
+            lblFormularioRegistroReservaciones.Location = new Point(45, 20);
+            lblFormularioRegistroReservaciones.Name = "lblFormularioRegistroReservaciones";
+            lblFormularioRegistroReservaciones.Size = new Size(436, 23);
+            lblFormularioRegistroReservaciones.TabIndex = 9;
+            lblFormularioRegistroReservaciones.Text = "FORMULARIO DE REGISTRO DE RESERVACIONES";
             // 
             // panelGestionHabitaciones
             // 
@@ -732,9 +709,6 @@
             panelGestionHabitaciones.Size = new Size(839, 643);
             panelGestionHabitaciones.TabIndex = 2;
             // 
-            // panelSup4
-            // 
-            panelSup4.BackColor = Color.FromArgb(44, 62, 80);
             // dgvHabitaciones
             // 
             dgvHabitaciones.AllowUserToOrderColumns = true;
@@ -747,39 +721,39 @@
             // panelSup4
             // 
             panelSup4.BackColor = Color.FromArgb(44, 62, 80);
-            panelSup4.Controls.Add(label22);
+            panelSup4.Controls.Add(lblListasHabitaciones);
             panelSup4.Location = new Point(0, 0);
             panelSup4.Name = "panelSup4";
             panelSup4.Size = new Size(838, 62);
             panelSup4.TabIndex = 1;
             // 
-            // label22
+            // lblListasHabitaciones
             // 
-            label22.BackColor = Color.Transparent;
-            label22.FlatStyle = FlatStyle.Popup;
-            label22.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label22.ForeColor = Color.Black;
-            label22.Image = (Image)resources.GetObject("label22.Image");
-            label22.ImageAlign = ContentAlignment.MiddleLeft;
-            label22.Location = new Point(15, 17);
-            label22.Name = "label22";
-            label22.Size = new Size(281, 23);
-            label22.TabIndex = 9;
-            label22.Text = "LISTA DE HABITACIONES:";
-            label22.TextAlign = ContentAlignment.MiddleRight;
+            lblListasHabitaciones.BackColor = Color.Transparent;
+            lblListasHabitaciones.FlatStyle = FlatStyle.Popup;
+            lblListasHabitaciones.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblListasHabitaciones.ForeColor = Color.Black;
+            lblListasHabitaciones.Image = (Image)resources.GetObject("lblListasHabitaciones.Image");
+            lblListasHabitaciones.ImageAlign = ContentAlignment.MiddleLeft;
+            lblListasHabitaciones.Location = new Point(15, 17);
+            lblListasHabitaciones.Name = "lblListasHabitaciones";
+            lblListasHabitaciones.Size = new Size(281, 23);
+            lblListasHabitaciones.TabIndex = 9;
+            lblListasHabitaciones.Text = "LISTA DE HABITACIONES:";
+            lblListasHabitaciones.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panelListaReservaciones
             // 
             panelListaReservaciones.BackColor = Color.FromArgb(127, 140, 141);
             panelListaReservaciones.BorderStyle = BorderStyle.FixedSingle;
+            panelListaReservaciones.Controls.Add(lblFiltrarFecha2);
+            panelListaReservaciones.Controls.Add(lblFiltrarEstado2);
             panelListaReservaciones.Controls.Add(btnExportarExcel2);
             panelListaReservaciones.Controls.Add(btnCancelarReservacion);
             panelListaReservaciones.Controls.Add(btnEditar);
             panelListaReservaciones.Controls.Add(dataGridView2);
             panelListaReservaciones.Controls.Add(comboBox2);
             panelListaReservaciones.Controls.Add(comboBox1);
-            panelListaReservaciones.Controls.Add(label10);
-            panelListaReservaciones.Controls.Add(label9);
             panelListaReservaciones.Controls.Add(btnBuscar);
             panelListaReservaciones.Controls.Add(txtBuscador);
             panelListaReservaciones.Controls.Add(panelSup3);
@@ -788,304 +762,44 @@
             panelListaReservaciones.Size = new Size(839, 643);
             panelListaReservaciones.TabIndex = 2;
             // 
-            // panelSup3
-            // 
-            panelSup3.BackColor = Color.FromArgb(44, 62, 80);
-            panelSup3.Controls.Add(label8);
-            panelSup3.Location = new Point(-1, -1);
-            panelSup3.Name = "panelSup3";
-            panelSup3.Size = new Size(839, 62);
-            panelSup3.TabIndex = 1;
-            // 
-            // panelReportesBasicos
-            // 
-            panelReportesBasicos.BackColor = Color.FromArgb(127, 140, 141);
-            panelReportesBasicos.BorderStyle = BorderStyle.FixedSingle;
-            panelReportesBasicos.Controls.Add(txtIngresos);
-            panelReportesBasicos.Controls.Add(txtCancelaciones);
-            panelReportesBasicos.Controls.Add(txtReservacionesActivas);
-            panelReportesBasicos.Controls.Add(txtOcupacionActual);
-            panelReportesBasicos.Controls.Add(dataGridView1);
-            panelReportesBasicos.Controls.Add(button2);
-            panelReportesBasicos.Controls.Add(button1);
-            panelReportesBasicos.Controls.Add(dateTimePicker2);
-            panelReportesBasicos.Controls.Add(dateTimePicker1);
-            panelReportesBasicos.Controls.Add(label7);
-            panelReportesBasicos.Controls.Add(label6);
-            panelReportesBasicos.Controls.Add(label5);
-            panelReportesBasicos.Controls.Add(label4);
-            panelReportesBasicos.Controls.Add(label3);
-            panelReportesBasicos.Controls.Add(label2);
-            panelReportesBasicos.Controls.Add(panelSup2);
-            panelReportesBasicos.Location = new Point(194, 0);
-            panelReportesBasicos.Name = "panelReportesBasicos";
-            panelReportesBasicos.Size = new Size(839, 643);
-            panelReportesBasicos.TabIndex = 2;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(653, 104);
-            label5.Name = "label5";
-            label5.Size = new Size(93, 15);
-            label5.TabIndex = 5;
-            label5.Text = "Ingresos del Día:";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(491, 104);
-            label4.Name = "label4";
-            label4.Size = new Size(89, 15);
-            label4.TabIndex = 4;
-            label4.Text = "Cancelaciones: ";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(279, 104);
-            label3.Name = "label3";
-            label3.Size = new Size(128, 15);
-            label3.TabIndex = 3;
-            label3.Text = "Reservaciones Activas: ";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(83, 104);
-            label2.Name = "label2";
-            label2.Size = new Size(108, 15);
-            label2.TabIndex = 2;
-            label2.Text = "Ocupacion Actual: ";
-            // 
-            // panelSup2
-            // 
-            panelSup2.BackColor = Color.FromArgb(44, 62, 80);
-            panelSup2.Controls.Add(label1);
-            // panelSup2
-            // 
-            panelSup2.BackColor = Color.FromArgb(44, 62, 80);
-            panelSup2.Location = new Point(-1, -1);
-            panelSup2.Name = "panelSup2";
-            panelSup2.Size = new Size(839, 62);
-            panelSup2.TabIndex = 1;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.FlatStyle = FlatStyle.Popup;
-            label1.Font = new Font("Franklin Gothic Medium", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(26, 18);
-            label1.Name = "label1";
-            label1.Size = new Size(144, 23);
-            label1.TabIndex = 0;
-            label1.Text = "Reportes Básicos";
-            // 
-            // panelAdministracionCostos
-            // 
-            panelAdministracionCostos.BackColor = Color.FromArgb(127, 140, 141);
-            panelAdministracionCostos.BorderStyle = BorderStyle.FixedSingle;
-            panelAdministracionCostos.Controls.Add(panelSup1);
-            panelAdministracionCostos.Location = new Point(194, 0);
-            panelAdministracionCostos.Name = "panelAdministracionCostos";
-            panelAdministracionCostos.Size = new Size(839, 643);
-            panelAdministracionCostos.TabIndex = 2;
-            // 
-            // panelSup1
-            // 
-            panelSup1.BackColor = Color.FromArgb(44, 62, 80);
-            panelSup1.Location = new Point(-1, -1);
-            panelSup1.Name = "panelSup1";
-            panelSup1.Size = new Size(839, 62);
-            panelSup1.TabIndex = 0;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(84, 506);
-            label6.Name = "label6";
-            label6.Size = new Size(45, 15);
-            label6.TabIndex = 6;
-            label6.Text = "Desde: ";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(465, 503);
-            label7.Name = "label7";
-            label7.Size = new Size(43, 15);
-            label7.TabIndex = 7;
-            label7.Text = "Hasta: ";
-            // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Location = new Point(130, 500);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(232, 23);
-            dateTimePicker1.TabIndex = 8;
-            dateTimePicker1.Value = new DateTime(2026, 8, 23, 18, 4, 0, 0);
-            // 
-            // dateTimePicker2
-            // 
-            dateTimePicker2.Location = new Point(514, 500);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(232, 23);
-            dateTimePicker2.TabIndex = 9;
-            dateTimePicker2.Value = new DateTime(2026, 8, 25, 0, 0, 0, 0);
-            // 
-            // button1
-            // 
-            button1.Location = new Point(312, 587);
-            button1.Name = "button1";
-            button1.Size = new Size(107, 25);
-            button1.TabIndex = 10;
-            button1.Text = "  Generar Reporte";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(425, 587);
-            button2.Name = "button2";
-            button2.Size = new Size(107, 25);
-            button2.TabIndex = 11;
-            button2.Text = "Exportar Excel";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { colFecha, colReservaciones, colCancelaciones, colIngresos });
-            dataGridView1.Location = new Point(83, 216);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(663, 257);
-            dataGridView1.TabIndex = 12;
-            // 
-            // colFecha
-            // 
-            colFecha.HeaderText = "Fecha";
-            colFecha.Name = "colFecha";
-            colFecha.Width = 120;
-            // 
-            // colReservaciones
-            // 
-            colReservaciones.HeaderText = "Reservaciones";
-            colReservaciones.Name = "colReservaciones";
-            colReservaciones.Width = 150;
-            // 
-            // colCancelaciones
-            // 
-            colCancelaciones.HeaderText = "Cancelaciones";
-            colCancelaciones.Name = "colCancelaciones";
-            colCancelaciones.Width = 150;
-            // 
-            // colIngresos
-            // 
-            colIngresos.HeaderText = "Ingresos";
-            colIngresos.Name = "colIngresos";
-            colIngresos.Width = 200;
-            // 
-            // txtOcupacionActual
-            // 
-            txtOcupacionActual.Location = new Point(83, 135);
-            txtOcupacionActual.Name = "txtOcupacionActual";
-            txtOcupacionActual.Size = new Size(108, 23);
-            txtOcupacionActual.TabIndex = 13;
-            // 
-            // txtReservacionesActivas
-            // 
-            txtReservacionesActivas.Location = new Point(279, 135);
-            txtReservacionesActivas.Name = "txtReservacionesActivas";
-            txtReservacionesActivas.Size = new Size(128, 23);
-            txtReservacionesActivas.TabIndex = 14;
-            // 
-            // txtCancelaciones
-            // 
-            txtCancelaciones.Location = new Point(491, 135);
-            txtCancelaciones.Name = "txtCancelaciones";
-            txtCancelaciones.Size = new Size(89, 23);
-            txtCancelaciones.TabIndex = 15;
-            // 
-            // txtIngresos
-            // 
-            txtIngresos.Location = new Point(653, 135);
-            txtIngresos.Name = "txtIngresos";
-            txtIngresos.Size = new Size(93, 23);
-            txtIngresos.TabIndex = 16;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.Transparent;
-            label8.FlatStyle = FlatStyle.Popup;
-            label8.Font = new Font("Franklin Gothic Medium", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.Black;
-            label8.Location = new Point(26, 18);
-            label8.Name = "label8";
-            label8.Size = new Size(187, 23);
-            label8.TabIndex = 1;
-            label8.Text = "Lista de Reservaciones";
-            // 
-            // txtBuscador
-            // 
-            txtBuscador.Location = new Point(44, 80);
-            txtBuscador.Name = "txtBuscador";
-            txtBuscador.Size = new Size(300, 23);
-            txtBuscador.TabIndex = 2;
-            // 
-            // btnBuscar
-            // 
-            btnBuscar.Location = new Point(350, 80);
-            btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(100, 23);
-            btnBuscar.TabIndex = 3;
-            btnBuscar.Text = "Buscar";
-            btnBuscar.UseVisualStyleBackColor = true;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(44, 143);
-            label9.Name = "label9";
-            label9.Size = new Size(99, 15);
-            label9.TabIndex = 4;
-            label9.Text = "Filtrar por Estado:";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(241, 143);
-            label10.Name = "label10";
-            label10.Size = new Size(103, 15);
-            label10.TabIndex = 5;
-            label10.Text = "Filtrar por Fechas: ";
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(44, 164);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 6;
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(241, 164);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 7;
-            // 
-            // dataGridView2
-            // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { colIDReserva, colCliente, colHabitacion, colEntrada, colSalida, colEstado, colMonto });
-            dataGridView2.Location = new Point(8, 240);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(818, 297);
-            dataGridView2.TabIndex = 8;
+            // lblFiltrarFecha2
+            // 
+            lblFiltrarFecha2.AutoSize = true;
+            lblFiltrarFecha2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblFiltrarFecha2.Location = new Point(241, 137);
+            lblFiltrarFecha2.Name = "lblFiltrarFecha2";
+            lblFiltrarFecha2.Size = new Size(149, 21);
+            lblFiltrarFecha2.TabIndex = 55;
+            lblFiltrarFecha2.Text = "Filtrar por Fecha: ";
+            // 
+            // lblFiltrarEstado2
+            // 
+            lblFiltrarEstado2.AutoSize = true;
+            lblFiltrarEstado2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblFiltrarEstado2.Location = new Point(44, 137);
+            lblFiltrarEstado2.Name = "lblFiltrarEstado2";
+            lblFiltrarEstado2.Size = new Size(155, 21);
+            lblFiltrarEstado2.TabIndex = 54;
+            lblFiltrarEstado2.Text = "Filtrar por Estado: ";
+            // 
+            // btnExportarExcel2
+            // 
+            btnExportarExcel2.Location = new Point(327, 546);
+            btnExportarExcel2.Name = "btnExportarExcel2";
+            btnExportarExcel2.Size = new Size(160, 35);
+            btnExportarExcel2.TabIndex = 11;
+            btnExportarExcel2.Text = "Exportar Excel";
+            btnExportarExcel2.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelarReservacion
+            // 
+            btnCancelarReservacion.Location = new Point(130, 546);
+            btnCancelarReservacion.Name = "btnCancelarReservacion";
+            btnCancelarReservacion.Size = new Size(180, 35);
+            btnCancelarReservacion.TabIndex = 10;
+            btnCancelarReservacion.Text = "Cancelar Reservacion";
+            btnCancelarReservacion.UseVisualStyleBackColor = true;
+            btnCancelarReservacion.Click += btnCancelarReservacion_Click;
             // 
             // btnEditar
             // 
@@ -1096,23 +810,14 @@
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = true;
             // 
-            // btnCancelarReservacion
+            // dataGridView2
             // 
-            btnCancelarReservacion.Location = new Point(130, 546);
-            btnCancelarReservacion.Name = "btnCancelarReservacion";
-            btnCancelarReservacion.Size = new Size(180, 35);
-            btnCancelarReservacion.TabIndex = 10;
-            btnCancelarReservacion.Text = "Cancelar Reservacion";
-            btnCancelarReservacion.UseVisualStyleBackColor = true;
-            // 
-            // btnExportarExcel2
-            // 
-            btnExportarExcel2.Location = new Point(327, 546);
-            btnExportarExcel2.Name = "btnExportarExcel2";
-            btnExportarExcel2.Size = new Size(160, 35);
-            btnExportarExcel2.TabIndex = 11;
-            btnExportarExcel2.Text = "Exportar Excel";
-            btnExportarExcel2.UseVisualStyleBackColor = true;
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { colIDReserva, colCliente, colHabitacion, colEntrada, colSalida, colEstado, colMonto });
+            dataGridView2.Location = new Point(8, 240);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.Size = new Size(818, 297);
+            dataGridView2.TabIndex = 8;
             // 
             // colIDReserva
             // 
@@ -1154,6 +859,282 @@
             colMonto.HeaderText = "Monto";
             colMonto.Name = "colMonto";
             // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(241, 164);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(121, 23);
+            comboBox2.TabIndex = 7;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(44, 164);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(121, 23);
+            comboBox1.TabIndex = 6;
+            // 
+            // btnBuscar
+            // 
+            btnBuscar.Location = new Point(350, 80);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(100, 23);
+            btnBuscar.TabIndex = 3;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
+            // 
+            // txtBuscador
+            // 
+            txtBuscador.Location = new Point(44, 80);
+            txtBuscador.Name = "txtBuscador";
+            txtBuscador.Size = new Size(300, 23);
+            txtBuscador.TabIndex = 2;
+            // 
+            // panelSup3
+            // 
+            panelSup3.BackColor = Color.FromArgb(44, 62, 80);
+            panelSup3.Controls.Add(lblListaDeReservaciones);
+            panelSup3.Location = new Point(-1, -1);
+            panelSup3.Name = "panelSup3";
+            panelSup3.Size = new Size(839, 62);
+            panelSup3.TabIndex = 1;
+            // 
+            // lblListaDeReservaciones
+            // 
+            lblListaDeReservaciones.AutoSize = true;
+            lblListaDeReservaciones.BackColor = Color.Transparent;
+            lblListaDeReservaciones.FlatStyle = FlatStyle.Popup;
+            lblListaDeReservaciones.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblListaDeReservaciones.ForeColor = Color.Black;
+            lblListaDeReservaciones.Location = new Point(23, 19);
+            lblListaDeReservaciones.Name = "lblListaDeReservaciones";
+            lblListaDeReservaciones.Size = new Size(242, 23);
+            lblListaDeReservaciones.TabIndex = 9;
+            lblListaDeReservaciones.Text = "LISTA DE RESERVACIONES";
+            // 
+            // panelReportesBasicos
+            // 
+            panelReportesBasicos.BackColor = Color.FromArgb(127, 140, 141);
+            panelReportesBasicos.BorderStyle = BorderStyle.FixedSingle;
+            panelReportesBasicos.Controls.Add(lblIngresosDia2);
+            panelReportesBasicos.Controls.Add(lblCancelaciones2);
+            panelReportesBasicos.Controls.Add(lblHasta2);
+            panelReportesBasicos.Controls.Add(lblDesde2);
+            panelReportesBasicos.Controls.Add(lblReservacionesActivas2);
+            panelReportesBasicos.Controls.Add(lblOcupacionActual2);
+            panelReportesBasicos.Controls.Add(txtIngresos);
+            panelReportesBasicos.Controls.Add(txtCancelaciones);
+            panelReportesBasicos.Controls.Add(txtReservacionesActivas);
+            panelReportesBasicos.Controls.Add(txtOcupacionActual);
+            panelReportesBasicos.Controls.Add(dataGridView1);
+            panelReportesBasicos.Controls.Add(btnExportarExcel);
+            panelReportesBasicos.Controls.Add(btnGenerarReporte);
+            panelReportesBasicos.Controls.Add(dateTimePicker2);
+            panelReportesBasicos.Controls.Add(dateTimePicker1);
+            panelReportesBasicos.Controls.Add(panelSup2);
+            panelReportesBasicos.Location = new Point(194, 0);
+            panelReportesBasicos.Name = "panelReportesBasicos";
+            panelReportesBasicos.Size = new Size(839, 643);
+            panelReportesBasicos.TabIndex = 2;
+            // 
+            // lblIngresosDia2
+            // 
+            lblIngresosDia2.AutoSize = true;
+            lblIngresosDia2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblIngresosDia2.Location = new Point(654, 104);
+            lblIngresosDia2.Name = "lblIngresosDia2";
+            lblIngresosDia2.Size = new Size(143, 21);
+            lblIngresosDia2.TabIndex = 56;
+            lblIngresosDia2.Text = "Ingresos del Día: ";
+            // 
+            // lblCancelaciones2
+            // 
+            lblCancelaciones2.AutoSize = true;
+            lblCancelaciones2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblCancelaciones2.Location = new Point(491, 104);
+            lblCancelaciones2.Name = "lblCancelaciones2";
+            lblCancelaciones2.Size = new Size(120, 21);
+            lblCancelaciones2.TabIndex = 55;
+            lblCancelaciones2.Text = "Cancelaciones: ";
+            // 
+            // lblHasta2
+            // 
+            lblHasta2.AutoSize = true;
+            lblHasta2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblHasta2.Location = new Point(451, 501);
+            lblHasta2.Name = "lblHasta2";
+            lblHasta2.Size = new Size(66, 21);
+            lblHasta2.TabIndex = 54;
+            lblHasta2.Text = "Hasta: ";
+            // 
+            // lblDesde2
+            // 
+            lblDesde2.AutoSize = true;
+            lblDesde2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblDesde2.Location = new Point(63, 501);
+            lblDesde2.Name = "lblDesde2";
+            lblDesde2.Size = new Size(67, 21);
+            lblDesde2.TabIndex = 53;
+            lblDesde2.Text = "Desde: ";
+            // 
+            // lblReservacionesActivas2
+            // 
+            lblReservacionesActivas2.AutoSize = true;
+            lblReservacionesActivas2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblReservacionesActivas2.Location = new Point(278, 104);
+            lblReservacionesActivas2.Name = "lblReservacionesActivas2";
+            lblReservacionesActivas2.Size = new Size(181, 21);
+            lblReservacionesActivas2.TabIndex = 50;
+            lblReservacionesActivas2.Text = "Reservaciones Activas: ";
+            // 
+            // lblOcupacionActual2
+            // 
+            lblOcupacionActual2.AutoSize = true;
+            lblOcupacionActual2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblOcupacionActual2.Location = new Point(79, 104);
+            lblOcupacionActual2.Name = "lblOcupacionActual2";
+            lblOcupacionActual2.Size = new Size(142, 21);
+            lblOcupacionActual2.TabIndex = 49;
+            lblOcupacionActual2.Text = "Ocupacion Actual:";
+            // 
+            // txtIngresos
+            // 
+            txtIngresos.Location = new Point(653, 128);
+            txtIngresos.Name = "txtIngresos";
+            txtIngresos.Size = new Size(93, 23);
+            txtIngresos.TabIndex = 16;
+            // 
+            // txtCancelaciones
+            // 
+            txtCancelaciones.Location = new Point(491, 128);
+            txtCancelaciones.Name = "txtCancelaciones";
+            txtCancelaciones.Size = new Size(89, 23);
+            txtCancelaciones.TabIndex = 15;
+            // 
+            // txtReservacionesActivas
+            // 
+            txtReservacionesActivas.Location = new Point(278, 128);
+            txtReservacionesActivas.Name = "txtReservacionesActivas";
+            txtReservacionesActivas.Size = new Size(128, 23);
+            txtReservacionesActivas.TabIndex = 14;
+            // 
+            // txtOcupacionActual
+            // 
+            txtOcupacionActual.Location = new Point(83, 128);
+            txtOcupacionActual.Name = "txtOcupacionActual";
+            txtOcupacionActual.Size = new Size(108, 23);
+            txtOcupacionActual.TabIndex = 13;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { colFecha, colReservaciones, colCancelaciones, colIngresos });
+            dataGridView1.Location = new Point(83, 216);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(663, 257);
+            dataGridView1.TabIndex = 12;
+            // 
+            // colFecha
+            // 
+            colFecha.HeaderText = "Fecha";
+            colFecha.Name = "colFecha";
+            colFecha.Width = 120;
+            // 
+            // colReservaciones
+            // 
+            colReservaciones.HeaderText = "Reservaciones";
+            colReservaciones.Name = "colReservaciones";
+            colReservaciones.Width = 150;
+            // 
+            // colCancelaciones
+            // 
+            colCancelaciones.HeaderText = "Cancelaciones";
+            colCancelaciones.Name = "colCancelaciones";
+            colCancelaciones.Width = 150;
+            // 
+            // colIngresos
+            // 
+            colIngresos.HeaderText = "Ingresos";
+            colIngresos.Name = "colIngresos";
+            colIngresos.Width = 200;
+            // 
+            // btnExportarExcel
+            // 
+            btnExportarExcel.Location = new Point(425, 587);
+            btnExportarExcel.Name = "btnExportarExcel";
+            btnExportarExcel.Size = new Size(107, 25);
+            btnExportarExcel.TabIndex = 11;
+            btnExportarExcel.Text = "Exportar Excel";
+            btnExportarExcel.UseVisualStyleBackColor = true;
+            // 
+            // btnGenerarReporte
+            // 
+            btnGenerarReporte.Location = new Point(312, 587);
+            btnGenerarReporte.Name = "btnGenerarReporte";
+            btnGenerarReporte.Size = new Size(107, 25);
+            btnGenerarReporte.TabIndex = 10;
+            btnGenerarReporte.Text = "  Generar Reporte";
+            btnGenerarReporte.UseVisualStyleBackColor = true;
+            btnGenerarReporte.Click += btnGenerarReporte_Click;
+            // 
+            // dateTimePicker2
+            // 
+            dateTimePicker2.Location = new Point(514, 500);
+            dateTimePicker2.Name = "dateTimePicker2";
+            dateTimePicker2.Size = new Size(232, 23);
+            dateTimePicker2.TabIndex = 9;
+            dateTimePicker2.Value = new DateTime(2026, 8, 25, 0, 0, 0, 0);
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(130, 500);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(232, 23);
+            dateTimePicker1.TabIndex = 8;
+            dateTimePicker1.Value = new DateTime(2026, 8, 23, 18, 4, 0, 0);
+            // 
+            // panelSup2
+            // 
+            panelSup2.BackColor = Color.FromArgb(44, 62, 80);
+            panelSup2.Controls.Add(lblReportesBasicos);
+            panelSup2.Location = new Point(-1, -1);
+            panelSup2.Name = "panelSup2";
+            panelSup2.Size = new Size(839, 62);
+            panelSup2.TabIndex = 1;
+            // 
+            // lblReportesBasicos
+            // 
+            lblReportesBasicos.AutoSize = true;
+            lblReportesBasicos.BackColor = Color.Transparent;
+            lblReportesBasicos.FlatStyle = FlatStyle.Popup;
+            lblReportesBasicos.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblReportesBasicos.ForeColor = Color.Black;
+            lblReportesBasicos.Location = new Point(23, 18);
+            lblReportesBasicos.Name = "lblReportesBasicos";
+            lblReportesBasicos.Size = new Size(186, 23);
+            lblReportesBasicos.TabIndex = 9;
+            lblReportesBasicos.Text = "REPORTES BÁSICOS";
+            // 
+            // panelAdministracionCostos
+            // 
+            panelAdministracionCostos.BackColor = Color.FromArgb(127, 140, 141);
+            panelAdministracionCostos.BorderStyle = BorderStyle.FixedSingle;
+            panelAdministracionCostos.Controls.Add(panelSup1);
+            panelAdministracionCostos.Location = new Point(194, 0);
+            panelAdministracionCostos.Name = "panelAdministracionCostos";
+            panelAdministracionCostos.Size = new Size(839, 643);
+            panelAdministracionCostos.TabIndex = 2;
+            // 
+            // panelSup1
+            // 
+            panelSup1.BackColor = Color.FromArgb(44, 62, 80);
+            panelSup1.Location = new Point(-1, -1);
+            panelSup1.Name = "panelSup1";
+            panelSup1.Size = new Size(839, 62);
+            panelSup1.TabIndex = 0;
+            // 
             // DashBoard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1165,8 +1146,6 @@
             Controls.Add(panelListaReservaciones);
             Controls.Add(panelReportesBasicos);
             Controls.Add(panelAdministracionCostos);
-            Controls.Add(panelGestionHabitaciones);
-            Controls.Add(panelRegistroReservacion);
             Controls.Add(PanelMenu);
             Margin = new Padding(2);
             Name = "DashBoard";
@@ -1178,20 +1157,21 @@
             panelRegistroReservacion.ResumeLayout(false);
             panelRegistroReservacion.PerformLayout();
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             panelGestionHabitaciones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvHabitaciones).EndInit();
             panelSup4.ResumeLayout(false);
             panelListaReservaciones.ResumeLayout(false);
             panelListaReservaciones.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             panelSup3.ResumeLayout(false);
             panelSup3.PerformLayout();
             panelReportesBasicos.ResumeLayout(false);
             panelReportesBasicos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panelSup2.ResumeLayout(false);
             panelSup2.PerformLayout();
             panelAdministracionCostos.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);
         }
 
@@ -1216,15 +1196,14 @@
         private Panel panelSup4;
         private Panel panelSup3;
         private Panel panelSup2;
-        private Label label5;
-        private Label label4;
-        private Label label3;
-        private Label label2;
-        private Label label1;
+        private Label lblNoINEPasaporte2;
+        private Label lblIngresosDia;
+        private Label lblCancelaciones;
+        private Label lblReservaciones;
         private Label label7;
         private Label label6;
-        private Button button2;
-        private Button button1;
+        private Button btnExportarExcel;
+        private Button btnGenerarReporte;
         private DateTimePicker dateTimePicker2;
         private DateTimePicker dateTimePicker1;
         private DataGridView dataGridView1;
@@ -1254,46 +1233,60 @@
         private DataGridViewTextBoxColumn colSalida;
         private DataGridViewTextBoxColumn colEstado;
         private DataGridViewTextBoxColumn colMonto;
-        private Label label1;
-        private Label label4;
-        private Label label3;
         private TextBox txtNombre;
-        private Label label2;
         private TextBox txtCorreo;
         private TextBox txtTelefono;
-        private Label label6;
-        private Label label5;
-        private Label label11;
-        private Label label9;
-        private Label label8;
-        private Label label7;
         private ComboBox cmbnumeroHabitacion;
         private TextBox txtTipoHabitacion;
-        private Label label12;
+        private Label lblDatosDeHabitacion;
         private ComboBox cmbTipoIdentifiacion;
         private TextBox txtNumeroIdentificaion;
-        private Label label17;
-        private Label label16;
-        private Label label13;
-        private Label label10;
+        private Label lblNotasHuesped2;
+        private Label lblMontoTotal2;
+        private Label lblOperacionesAdicionales;
         private TextBox txtMontoTotal;
         private ComboBox cmbMetodoPago;
         private Button btnRegistrar;
         private TextBox txtNotasHuesped;
         private TextBox txtSolicitudesEspeciales;
         private TextBox txtEstado;
-        private Label label18;
+        private Label lblSolicitudesEspeciales2;
         private DateTimePicker dateFechaSalida;
         private DateTimePicker dateFechaEntrada;
-        private Label label19;
-        private Label label15;
+        private Label lblFechaEntrada2;
+        private Label lblFechaSalida2;
         private Button btnCancelar;
         private TextBox txtNumNoches;
-        private Label label20;
-        private Label label21;
+        private Label lblNoNoches2;
+        private Label lblEstadoPago2;
         private ComboBox cmbEstadoPago;
-        private Label label14;
+        private Label lblMontoDePago2;
         private DataGridView dgvHabitaciones;
-        private Label label22;
+        private Label lblListasHabitaciones;
+        private Label lblFiltrarFecha;
+        private Label lblFiltrarEstado;
+        private Label lblHasta;
+        private Label lblDesde;
+        private Label lblFormularioRegistroReservaciones;
+        private Label lblDatosDelHuesped;
+        private Label lblEstado2;
+        private Label lblNoHabitacion2;
+        private Label lblTipoHabitacion2;
+        private Label lblPago;
+        private Label lblTipoIdentificacion2;
+        private Label lblCorreo2;
+        private Label lblTelefono2;
+        private Label lblNombreCompleto2;
+        private Label lblListaDeReservaciones;
+        private Label lblReportesBasicos;
+        private Label label3;
+        private Label lblReservacionesActivas2;
+        private Label lblOcupacionActual2;
+        private Label lblFiltrarFecha2;
+        private Label lblFiltrarEstado2;
+        private Label lblHasta2;
+        private Label lblDesde2;
+        private Label lblIngresosDia2;
+        private Label lblCancelaciones2;
     }
 }
