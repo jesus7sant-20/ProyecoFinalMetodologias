@@ -118,85 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblMenu.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="lblListasHabitaciones.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAAKNJREFUWEftlcEJAjEQRR/agmIR4mIdNqBleNKDbgM2oR3YojzwNCwkata9zIO5
-        JPAy/AwMJEkyzAF4APdGpUtnFTvgCszixQ/o0qm7yA1YxcMG6NRdxC77ERLQWZWA7KecgUTmwBrYNipd
-        OqtYAk/gBBwb1fntXMTHhrgAm3jYAJ26i4zVQFfbgDEZl7HFKL+tj75AJh3CRHId5zrOdZwkf+MFaMZc
-        ABzdL8sAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnSalir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAYJJREFUWEftl7suRUEUQJdHKRENCZUfUKhR0RMkvkKn8wUKye2EH/CIRkQtNBoi
-        oVBp+AOikHhkyz7Jts3MOdeZc4vLSiY3mb1n9jqPO2cGYAQ4Bl6Bj1+2d+ABWAf6aRMp7ies07Z8gTKK
-        Kx8DpoAW8OgmvQc2gEk/WOkBZoEXvRvjPiFFUcTSm5DZdLmWI81Z8IEUIQGLlZErlNwJn6Tsa3zZB1KU
-        CVgONXfJB5TGBcoKlMWD/AmBC+AKGHb9X+QU2NP4ouu/1P7bkEROgWlgBxhy/VL0JiaRUyBFVKJTAkJQ
-        IofAGvBm5qrarmVwVwhUxT4C+c32CKoQLC7kFJgBtkv+ht+KCzkFdjXuFyJZBYPFhZwCsbgsxbIa/igu
-        dEIgyb9AVwk0sim1xARqbctlgEza5wMBDoxwrLV9MLnTgSfACjDgEwwxgVpHszng2Uwmt1G23yGZ2COo
-        jRxQV4Fz91m1MoPAqfbP+wlyMhqRKdpTbEltgkLmTA+x8r7I256NTxG8F5K1AFDUAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="btnCostos.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAAlhJREFUWEfFl0uKFEEQhj9cyYjgekDRhbjWm+hW76GnEF25URRE3HgA5xDuZk4w
-        gm9U8IWKytdEFlXpVGVk29IfJFR3ZcYfVRmPSshzCrgK3AOeAe+AnzG89j/vXYu5G+MCcB/4CvwejU/A
-        YQyvx/ec+yDWrs0OcBP4EUY/xhNeAXbryfHf5ZjjXNe4Vhva6uI8cBBGPgDXgZP1pAWc6xrXakNb2kxx
-        CXgTC/dmnjaLa7WhLW1qexG9LOK3gGP1hDXQhraKE7Nvwn0qr90FGZ7GyFCcUOPImDBYymvPPvn7GBm0
-        WbZDrQmmixFr0PTseY8Dom011JqkqDmrZ0Zui3PA49jPXzE+x8hshxpqWVtWWLUsHOZuK9UUfx0GvgCv
-        qvGkXnAEaqil5qpiWjo1aAFp8Sjm3gGO1zc7UEs7lvbhhxWuhU+p5/8iLmoND20T8Ucm+F4C3+bSqAO1
-        1FR71clsJhkexsK7wIn6ZicG7VsvbKd2tAxngBfhxPdRGj6PTDpdL1hATbW7HBBFFFO0OKAzOqVzOplh
-        cKBnC+ZwO9wWnXCbMgxb0BOESxiYBqiB2mIShD1puISpaYqaqi0maWgxyBaiORS3OGnHYtViUoh6SrFY
-        busSbFnWoGX6bL2g4q9SLDYGDWSakQ2nNJ/SjBS2QdkrWtwIraEZydbbsWz1g0RMo/2Y8D8/ydSY7SXj
-        j9LbHW9iifRHaeHiNj/LC3pZtsOgMXIzKVqoDybaaj55zTpHM+9t5Gg2Zu5wah0oh1Ovx/c2cjitqY/n
-        drJyPPe6HM+dkz6e/wHcL/TNGvCeoQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btnReportes.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAABBJJREFUWEetl3fI7mMYxz9mViJKJ2VTknWOmVn4yyizg3Osk00yMiN7kx0hJXQO
-        5SSOlZGRvcvMFskWEll9Tt/77T73M97f83q/dfU89++5x/d3Xd/ruu4HBmNh4GzgW+DfEexH4ApgsXbD
-        UXE88BywGrDQCHYy8AdwV15iwngZ2Lp92AESuBZ4HLgxpCaEd4F124cdIIHLgGXiwSvbCV3xfwi8koNv
-        A/4B9msndcFECawDnFDZTcB97aQuqAmsFGX7VoPsImBR4FzgUmCprN0hehgZNQHjeRBwyBDTzQpub+CA
-        kBE7TgYBN9sc2CyptTawxRDbpFL/pBBYFXgIeBCYAlwFPDzEHgCWzdpJCUGBXtiweSY2As5I7FubA3xW
-        ja2u27Ub9ENLYE3gJeAtYLfq+YXA+8DpwOEd7KTsY6UsOumLlsDtwL4pzevn2R7AC8DSwIxkwnh2NLAE
-        cDdwSrV/D1oCF2RROVzMA3YCdgdeBI7sYOrDYrU68EG1Vw9aAosABwJvZiPhdz1yInBmNXcYpqdHiJ+b
-        3xZAS2DJfK4FPJnvEjBDJHBWNXcYDGMh8FPz2wJoCVhOrYazgUvyrBDYFvgIuB64DlgD2DXj1l4HDs76
-        kQhYWm9OpzMcohAQ04D9Y8sD61Xj2rav9uxLwNQw1z8B9srGxbYCtgRWzNxCwPnPA68B9wIrpCA5fiaC
-        k7hjO6XZI3oI+Gb28PeAV4fYd8CmjQZsSLr+ncT56dQO03cm8EP0Mwu4M+f1EHDB1x1uMebz+Q0Bb0G6
-        3dCp9GcztuBYIyRgCptBAwnYaBST+alY+tkbwO+p8YWAB5kZes/NlwPmZvwosApwXsYS2yXn9RCw0Xyf
-        u+DGQ8yCdFpFwHXX5PLhc2/E3gscmzkSsmCZflendogxAgrv0LyFN1qFIlObxzGNHZta7vxCwBu0pHT9
-        pxGvvzl+JHeFL3NPUCu31AQWzySbzJ/AxcBUYINUN92tG83vYh9XhxQNlEpomBShewrnFxEa4p2jizEC
-        NoRfIh4nlkX3p6dbUNzUOlDshrTVQkA9+IfEDe2MZsPnGfvHxrANJGDaWEZdKMyEb0Ks5LuNxtDoDc1/
-        QEdFsEUDxtYYn1ppwPHl0cBAAr+GvZ1NqAdj9EVV5VR2Ua4wjsZaz9Ua0PU+3zPeKaFQAwMJvA0ckbia
-        /973VK9CU7nCzR7LQu2rhEbPmIK1Bqx2/TRgdnkPsHXfke8WtPl397/zxhYJ3WeMbw1jNzMrfAvNev5U
-        MsIsOafSgO3VGqIG3M+xh6gBS7FjNaE3LU7Wivnl956U37/SsWwY2+SA34DDckgxLxVerdTIh8BxVbse
-        D4bY9JTgWLPT9fvkAvlEB9Ot5Y/HynGpb2pMxzM95QsYOv4DTNBXM3rNWicAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnReservaciones.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAAhhJREFUWEftl7FqVEEUhr/CwhdIY5sXsDEQIY0ETOErJDY2PkEKH0B8BxtBsJCU
-        qazsxBdIrESJoqIExSAaNeG7mROOh73Jyu5et/CHs8z8Z+b/z87M3jsL/XgGbFcSeAo8qWTjzFWoodZf
-        4zvwtpLAF+BjJRtnrkINtc7EOrADHAK/Why1iP60eD300vPU3AG/gT3gVQv7P1M/8wpVXs5c5dXIvB72
-        9eyK2G3E6h9rcrJsbwonprEFeumpd9d4XQaILeB+JYFHwINKNs5chRpqVejpqnVL8bJmB4Cees9HAW7D
-        t4EjDmL34Ul9N3DoOT9b8L+AXMBae6h8TvEBWE5jKhaBq6nvWOdkDTXVDvQWcKdxX4FPwEHr305jMi43
-        cZ/xFxvnWOc4Vw217KsdOLeAW62/WQq4ADwHHgJXmrn5u0kjCnCuUGuqBfg2k4u33b00X0ylgLO24BLw
-        osdcTLQF4x7CBeB64QITHcKhML8FeFnw1vI+hTeZpTTmcckbcgHHOifn1cyXnt4C4hB6i/EQ/RhxCN1T
-        32bmDdtygTiEzjWv1tiH8LyfodDM0x2wPaqAiX6G/7yA/bZvCo8qwIeQecP2qALkzKs1dgE30t5HeNtd
-        SWP8F5TzRv635Fjn5Lyaagd6CxgKpwX0XctnDT317p7pNq7VETOEXnrqzc22FLESLs0sI765nhtRkY1Y
-        CROzjPjmfnGOAczywVkkJw+bAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="btnHabitaciones.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAArRJREFUWEftl0vIDnEUxn+5hSiSS6FcssCOUrayctmxtLBgYSOlKJeVWyxsPoSS
+        vAAADrwBlbxySQAAArRJREFUWEftl0vIDnEUxn+5hSiSS6FcssCOUrayctmxtLBgYSOlKJeVWyxsPoSS
         pMglLNxioZRLFohyKZcFn0uJiC39vs58zfs3M+/M+yoLnjr1nznnPM8z7zvznzMAj4A1NMNw4BDwNeJw
         nGsCNe+7mAM8B84Co9OqEmwDrgMzIlx7rg7UOBOaavdhJHAceA3Mb60vxEGgJ3fs2nPtIPer0FLzN6wE
         vgAbgQFpMoepcQWSGa49Vwa5NgCfQ6MSM4GHwFVgfJrMYRAwL8J1GeSQS065a2EYcAB4ByxMkw1gb29w
@@ -211,21 +136,70 @@
         TkSuQmCC
 </value>
   </data>
-  <data name="btnRegistros.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAApFJREFUWEfNl8vLTlEUhx/3SGIiMhDiT2DgbsRM7gMGQhm4ZG7GTCmXmbGEgQkJ
-        Y3KZmQklJMpAyf3ao7Vrt5z3fOd735e+p3ads/fZZ//WXmuvsw504wDwDPgK3AaW5Qf+JQeB78AJYBdw
-        C3gPLMoPDpOFwNZoL2PxwiTgMXA5xjcBU6vxoXAB+BVN69ek8dPVuE0RA1F8/LN6qRZ2oRbyLWJkaX6o
-        DRcvPt4W23oHuJQf7IELn4x5O/uJES2vfSxngafAjioWmtqhELCqmltiJL+zJ267ltfMA+4llzS1zyF2
-        XJqv+y6mvp74Iq0ZJrqvqwvHnoDVDb7u0swdhYEEvGjwdZfmSSicitaJLOC/M+YEdI2B2ueZBcAGYHO8
-        b1Z+oCYL6BoDtc9lciSmRw3PmmlvAOvSnD9kAf2wGHgIfATOACuBGcB4YG68/2asdQ6YUk8eVICLvwbu
-        x9a3sRF4B1wDJpbOLKAtBhyrcdu13MWnp7Fe+KX8ABwrHVlAWww4VqPP3faRLM9YZX0B5nuTBYwGA06f
-        j8QS4BWwIu79YlppHfemXwEeQ+cacG3MBp4Ad4FpVb9V1QMv+hXgOXeu0S7WhcXCggu6sAIUUrMnCpe+
-        BZhknOtRE3fC+uFI3E8ArgBvwwWZ7cAPL5oKki54IhTgOS+4eBHhFn8CllfjNYeBN140lWRdmBkZLu9e
-        EaF1W9JYjVXTdS+aitK2Vv8HmF7NcJl9wO7cWTEndmdv6Wgqy3s1xZZgWxt9ZrjRcB54PqwfGnO76bXr
-        v8DRcM/6PNAvfliuRno1w5lkmnDbtdzF9+fBQfHDYm43vZrhPAGec4+a0W59qM/d9qFZ3oS53fRqhjPJ
-        aK1HzWg34P7y+W/ti+asvA1rVQAAAABJRU5ErkJggg==
-</value>
-  </data>
+  <metadata name="colIDReserva.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colCliente.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colHabitacion.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colEntrada.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colSalida.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colEstado.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colMonto.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colIDReserva.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colCliente.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colHabitacion.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colEntrada.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colSalida.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colEstado.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colMonto.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colFecha.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colReservaciones.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colCancelaciones.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colIngresos.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colFecha.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colReservaciones.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colCancelaciones.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colIngresos.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
