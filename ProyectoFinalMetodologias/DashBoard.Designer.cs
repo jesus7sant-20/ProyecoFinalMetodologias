@@ -127,6 +127,16 @@
             lblReportesBasicos = new Label();
             panelAdministracionCostos = new Panel();
             panelSup1 = new Panel();
+            dataGridView3 = new DataGridView();
+            txtHabitacionSeleccionada = new TextBox();
+            txtNuevoPrecio = new TextBox();
+            btnActualizarPrecio = new Button();
+            Cancelar = new Button();
+            seleccionhabitacionamodificar = new Label();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
             PanelMenu.SuspendLayout();
             panelRegistroReservacion.SuspendLayout();
             panel1.SuspendLayout();
@@ -140,6 +150,7 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panelSup2.SuspendLayout();
             panelAdministracionCostos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
             SuspendLayout();
             // 
             // PanelMenu
@@ -1120,11 +1131,22 @@
             // 
             panelAdministracionCostos.BackColor = Color.FromArgb(127, 140, 141);
             panelAdministracionCostos.BorderStyle = BorderStyle.FixedSingle;
+            panelAdministracionCostos.Controls.Add(label4);
+            panelAdministracionCostos.Controls.Add(label3);
+            panelAdministracionCostos.Controls.Add(label2);
+            panelAdministracionCostos.Controls.Add(label1);
+            panelAdministracionCostos.Controls.Add(seleccionhabitacionamodificar);
+            panelAdministracionCostos.Controls.Add(Cancelar);
+            panelAdministracionCostos.Controls.Add(btnActualizarPrecio);
+            panelAdministracionCostos.Controls.Add(txtNuevoPrecio);
+            panelAdministracionCostos.Controls.Add(txtHabitacionSeleccionada);
+            panelAdministracionCostos.Controls.Add(dataGridView3);
             panelAdministracionCostos.Controls.Add(panelSup1);
             panelAdministracionCostos.Location = new Point(194, 0);
             panelAdministracionCostos.Name = "panelAdministracionCostos";
             panelAdministracionCostos.Size = new Size(839, 643);
             panelAdministracionCostos.TabIndex = 2;
+            panelAdministracionCostos.Paint += panelAdministracionCostos_Paint;
             // 
             // panelSup1
             // 
@@ -1134,15 +1156,101 @@
             panelSup1.Size = new Size(839, 62);
             panelSup1.TabIndex = 0;
             // 
+            // dataGridView3
+            // 
+            dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView3.Location = new Point(39, 163);
+            dataGridView3.Name = "dataGridView3";
+            dataGridView3.Size = new Size(380, 262);
+            dataGridView3.TabIndex = 1;
+            // 
+            // txtHabitacionSeleccionada
+            // 
+            txtHabitacionSeleccionada.Location = new Point(534, 187);
+            txtHabitacionSeleccionada.Name = "txtHabitacionSeleccionada";
+            txtHabitacionSeleccionada.Size = new Size(100, 23);
+            txtHabitacionSeleccionada.TabIndex = 2;
+            // 
+            // txtNuevoPrecio
+            // 
+            txtNuevoPrecio.Location = new Point(587, 256);
+            txtNuevoPrecio.Name = "txtNuevoPrecio";
+            txtNuevoPrecio.Size = new Size(100, 23);
+            txtNuevoPrecio.TabIndex = 3;
+            // 
+            // btnActualizarPrecio
+            // 
+            btnActualizarPrecio.Location = new Point(542, 332);
+            btnActualizarPrecio.Name = "btnActualizarPrecio";
+            btnActualizarPrecio.Size = new Size(75, 23);
+            btnActualizarPrecio.TabIndex = 4;
+            btnActualizarPrecio.Text = "button1";
+            btnActualizarPrecio.UseVisualStyleBackColor = true;
+            // 
+            // Cancelar
+            // 
+            Cancelar.Location = new Point(542, 378);
+            Cancelar.Name = "Cancelar";
+            Cancelar.Size = new Size(75, 23);
+            Cancelar.TabIndex = 5;
+            Cancelar.Text = "button2";
+            Cancelar.UseVisualStyleBackColor = true;
+            // 
+            // seleccionhabitacionamodificar
+            // 
+            seleccionhabitacionamodificar.AutoSize = true;
+            seleccionhabitacionamodificar.Location = new Point(92, 125);
+            seleccionhabitacionamodificar.Name = "seleccionhabitacionamodificar";
+            seleccionhabitacionamodificar.Size = new Size(178, 15);
+            seleccionhabitacionamodificar.TabIndex = 6;
+            seleccionhabitacionamodificar.Text = "seleccion habitacion a modificar";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(505, 124);
+            label1.Name = "label1";
+            label1.Size = new Size(155, 15);
+            label1.TabIndex = 7;
+            label1.Text = "Informacion de la Hbitacion";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(465, 193);
+            label2.Name = "label2";
+            label2.Size = new Size(62, 15);
+            label2.TabIndex = 8;
+            label2.Text = "Hbitacion:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(468, 229);
+            label3.Name = "label3";
+            label3.Size = new Size(77, 15);
+            label3.TabIndex = 9;
+            label3.Text = "Precio Actual";
+            label3.Click += label3_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(468, 259);
+            label4.Name = "label4";
+            label4.Size = new Size(116, 15);
+            label4.TabIndex = 10;
+            label4.Text = "Ingrsa Nuevo Precio:";
+            // 
             // DashBoard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1033, 649);
+            Controls.Add(panelAdministracionCostos);
             Controls.Add(panelReportesBasicos);
             Controls.Add(panelRegistroReservacion);
-            Controls.Add(panelAdministracionCostos);
             Controls.Add(panelListaReservaciones);
             Controls.Add(panelGestionHabitaciones);
             Controls.Add(PanelMenu);
@@ -1171,6 +1279,8 @@
             panelSup2.ResumeLayout(false);
             panelSup2.PerformLayout();
             panelAdministracionCostos.ResumeLayout(false);
+            panelAdministracionCostos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
             ResumeLayout(false);
         }
 
@@ -1287,5 +1397,14 @@
         private Label lblDesde2;
         private Label lblIngresosDia2;
         private Label lblCancelaciones2;
+        private DataGridView dataGridView3;
+        private Button Cancelar;
+        private Button btnActualizarPrecio;
+        private TextBox txtNuevoPrecio;
+        private TextBox txtHabitacionSeleccionada;
+        private Label label4;
+        private Label label2;
+        private Label label1;
+        private Label seleccionhabitacionamodificar;
     }
 }
