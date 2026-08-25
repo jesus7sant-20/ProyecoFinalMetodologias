@@ -158,7 +158,6 @@
             btnRegistros.TabIndex = 1;
             btnRegistros.Text = "Registro";
             btnRegistros.UseVisualStyleBackColor = true;
-            btnRegistros.Click += btnRegistros_Click;
             // 
             // lblNombreSistema
             // 
@@ -269,11 +268,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1033, 649);
-            Controls.Add(panelRegistroReservacion);
             Controls.Add(panelGestionHabitaciones);
             Controls.Add(panelListaReservaciones);
             Controls.Add(panelReportesBasicos);
             Controls.Add(panelAdministracionCostos);
+            Controls.Add(panelRegistroReservacion);
             Controls.Add(PanelMenu);
             Margin = new Padding(2);
             Name = "DashBoard";
