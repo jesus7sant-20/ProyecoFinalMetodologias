@@ -307,7 +307,6 @@ namespace ProyectoFinalMetodologias
                 .Where(r => r.FechaEntrada.Date == DateTime.Now.Date)
                 .Sum(r => r.MontoTotal);
             txtIngresos.Text = $"${ingresosHoy:0.00}";
-
         }
 
         private void btnGenerarReporte_Click(object sender, EventArgs e)

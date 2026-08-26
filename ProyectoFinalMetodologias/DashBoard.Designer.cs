@@ -1168,6 +1168,7 @@
             panelAdministracionCostos.Name = "panelAdministracionCostos";
             panelAdministracionCostos.Size = new Size(839, 643);
             panelAdministracionCostos.TabIndex = 2;
+            panelAdministracionCostos.Paint += panelAdministracionCostos_Paint;
             // 
             // label11
             // 
