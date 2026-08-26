@@ -17,8 +17,10 @@ namespace ProyectoFinalMetodologias
             listaHabitaciones = new List<cModeloHabitaciones>
             {
                 new cModeloHabitaciones { NumeroHabitacion = 101, TipoHabitacion = "Estandar", Estado = "Libre", TarifaPorNoche = 800 },
-                new cModeloHabitaciones { NumeroHabitacion = 102, TipoHabitacion = "Suite", Estado = "Libre", TarifaPorNoche = 1500 },
-                new cModeloHabitaciones { NumeroHabitacion = 103, TipoHabitacion = "Doble", Estado = "Libre", TarifaPorNoche = 1200 }
+                new cModeloHabitaciones { NumeroHabitacion = 102, TipoHabitacion = "Suite", Estado = "Libre", TarifaPorNoche = 1600 },
+                new cModeloHabitaciones { NumeroHabitacion = 103, TipoHabitacion = "Doble", Estado = "Libre", TarifaPorNoche = 1200 },
+                new cModeloHabitaciones { NumeroHabitacion = 104, TipoHabitacion = "Estandar", Estado = "Libre" , TarifaPorNoche = 800},
+                new cModeloHabitaciones { NumeroHabitacion = 105, TipoHabitacion = "Suite", Estado = "Libre", TarifaPorNoche = 1600}
             };
         }
 

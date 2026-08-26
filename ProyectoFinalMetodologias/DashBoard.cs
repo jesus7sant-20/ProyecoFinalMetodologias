@@ -12,7 +12,6 @@ namespace ProyectoFinalMetodologias
     public partial class DashBoard : Form
     {
         cListas listas = new cListas();
-        //Le ingresamos el rol segun el login
         private string rolUsuario;
         private Login loginFormulario;
 
@@ -38,12 +37,12 @@ namespace ProyectoFinalMetodologias
             cmbnumeroHabitacion.DisplayMember = "NumeroHabitacion";
             cmbnumeroHabitacion.ValueMember = "NumeroHabitacion";
 
-            // 2. Suscribir los eventos
+            //Suscribir los eventos
             cmbnumeroHabitacion.SelectedIndexChanged += cmbnumeroHabitacion_SelectedIndexChanged;
             dateFechaEntrada.ValueChanged += dateFechaEntrada_ValueChanged;
             dateFechaSalida.ValueChanged += dateFechaSalida_ValueChanged;
 
-            // 3. Forzar el llenado del primer elemento (tipo de habitación, costo, etc.)
+            //Forzar el llenado del primer elemento (tipo de habitación, costo, etc.)
             cmbnumeroHabitacion_SelectedIndexChanged(null, null);
         }
 
@@ -141,11 +140,14 @@ namespace ProyectoFinalMetodologias
             dgvHabitaciones.DataSource = null;
             dgvHabitaciones.DataSource = listas.listaHabitaciones;
 
-            LimpiarFormulario();
+            dvgHabitacionesPrecio.DataSource = null;
+            dvgHabitacionesPrecio.DataSource = listas.listaHabitaciones;
 
-            //Para llenar la tabla de reservaciones
-            //dgvReservaciones.DataSource = null;
-            //dgvReservaciones.DataSource = listas.listaReservaciones;
+            dataGridView2.DataSource = null;
+            dataGridView2.DataSource = listas.listaReservaciones;
+
+            LimpiarFormulario();
+            CargarListaReservaciones();
         }
 
         private void cmbnumeroHabitacion_SelectedIndexChanged(object sender, EventArgs e)
@@ -266,7 +268,7 @@ namespace ProyectoFinalMetodologias
                     var habitacion = listas.listaHabitaciones.FirstOrDefault(h => h.NumeroHabitacion == reservaSeleccionada.NumHabitacion);
                     if (habitacion != null)
                     {
-                        habitacion.Estado = "Libre";
+                        habitacion.Estado = "Limpieza";
                     }
 
                     // Removemos de la lista de reservaciones activas
@@ -325,7 +327,8 @@ namespace ProyectoFinalMetodologias
                 .ToList();
 
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = reporteFiltrado.Select(r => new {
+            dataGridView1.DataSource = reporteFiltrado.Select(r => new
+            {
                 Fecha = r.FechaEntrada.ToShortDateString(),
                 Reservaciones = r.NombreCompleto,
                 Cancelaciones = "N/A",
@@ -334,5 +337,187 @@ namespace ProyectoFinalMetodologias
 
             MessageBox.Show("Reporte generado exitosamente para el rango de fechas seleccionado.", "Reporte", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void ExportarDataGridViewACSV(DataGridView dgv, string nombreArchivo)
+        {
+            if (dgv.Rows.Count == 0)
+            {
+                MessageBox.Show("No hay datos para exportar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "Archivo CSV (*.csv)|*.csv";
+            sfd.FileName = nombreArchivo;
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                StringBuilder sb = new StringBuilder();
+
+                // Obtener cabeceras
+                string[] columnas = new string[dgv.Columns.Count];
+                for (int i = 0; i < dgv.Columns.Count; i++)
+                {
+                    columnas[i] = dgv.Columns[i].HeaderText;
+                }
+                sb.AppendLine(string.Join(",", columnas));
+
+                // Obtener filas
+                foreach (DataGridViewRow fila in dgv.Rows)
+                {
+                    if (!fila.IsNewRow)
+                    {
+                        string[] celdas = new string[dgv.Columns.Count];
+                        for (int j = 0; j < dgv.Columns.Count; j++)
+                        {
+                            celdas[j] = fila.Cells[j].Value?.ToString().Replace(",", " ") ?? "";
+                        }
+                        sb.AppendLine(string.Join(",", celdas));
+                    }
+                }
+
+                System.IO.File.WriteAllText(sfd.FileName, sb.ToString(), Encoding.UTF8);
+                MessageBox.Show("Datos exportados exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnExportarExcel2_Click(object sender, EventArgs e)
+        {
+            ExportarDataGridViewACSV(dataGridView2, "Reservaciones.csv");
+        }
+
+        private void btnExportarExcel_Click(object sender, EventArgs e)
+        {
+            ExportarDataGridViewACSV(dataGridView1, "Reporte_general.cvs");
+        }
+
+        private void btnRegistros_Click_1(object sender, EventArgs e)
+        {
+            panelRegistroReservacion.BringToFront();
+        }
+
+        private void btnCancelarCambio_Click(object sender, EventArgs e)
+        {
+            txtHabitacion.Text = "";
+            txtPrecioActual.Text = "";
+            txtNuevoPrecio.Text = "";
+        }
+
+        private void btnCambiarPrecio_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(txtHabitacion.Text, out int numHab) &&
+                decimal.TryParse(txtNuevoPrecio.Text, out decimal nuevoPrecio))
+            {
+                var habitacion = listas.listaHabitaciones.FirstOrDefault(h => h.NumeroHabitacion == numHab);
+                if (habitacion != null)
+                {
+                    habitacion.TarifaPorNoche = nuevoPrecio;
+                    MessageBox.Show("¡Precio actualizado exitosamente!", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Refrescamos las tablas para que reflejen el cambio de tarifa
+                    dvgHabitacionesPrecio.DataSource = null;
+                    dvgHabitacionesPrecio.DataSource = listas.listaHabitaciones;
+
+                    dgvHabitaciones.DataSource = null;
+                    dgvHabitaciones.DataSource = listas.listaHabitaciones;
+
+                    // Limpiamos campos
+                    txtHabitacion.Text = "";
+                    txtPrecioActual.Text = "";
+                    txtNuevoPrecio.Text = "";
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione una habitación válida e ingrese un nuevo precio numérico.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void dvgHabitacionesPrecio_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow fila = dvgHabitacionesPrecio.Rows[e.RowIndex];
+                txtHabitacion.Text = fila.Cells["NumeroHabitacion"].Value?.ToString();
+                txtPrecioActual.Text = fila.Cells["TarifaPorNoche"].Value?.ToString();
+                txtNuevoPrecio.Text = ""; // Limpiamos para que escribas el nuevo
+            }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (dataGridView2.SelectedRows.Count > 0)
+            {
+                var reservaSeleccionada = dataGridView2.SelectedRows[0].DataBoundItem as cLogicaRegistros;
+                if (reservaSeleccionada != null)
+                {
+                    // 1. Mandamos los datos de regreso al panel de registros
+                    panelRegistroReservacion.BringToFront();
+
+                    txtNombre.Text = reservaSeleccionada.NombreCompleto;
+                    txtTelefono.Text = reservaSeleccionada.Telefono;
+                    txtCorreo.Text = reservaSeleccionada.Correo;
+                    cmbTipoIdentifiacion.SelectedItem = reservaSeleccionada.TipoIdentificacion;
+                    txtNumeroIdentificaion.Text = reservaSeleccionada.NumeroIdentificacion;
+                    cmbnumeroHabitacion.SelectedValue = reservaSeleccionada.NumHabitacion;
+                    dateFechaEntrada.Value = reservaSeleccionada.FechaEntrada;
+                    dateFechaSalida.Value = reservaSeleccionada.FechaSalida;
+                    cmbMetodoPago.SelectedItem = reservaSeleccionada.MetodoPago;
+                    cmbEstadoPago.SelectedItem = reservaSeleccionada.EstadoPago;
+                    txtSolicitudesEspeciales.Text = reservaSeleccionada.Solicitudesespeciales;
+                    txtNotasHuesped.Text = reservaSeleccionada.NOtasHuesped;
+
+                    // 2. Opcional: eliminamos la viejas para que al registrar de nuevo se actualice limpia
+                    listas.listaReservaciones.Remove(reservaSeleccionada);
+                    CargarListaReservaciones();
+
+                    MessageBox.Show("Modifique los datos necesarios en el formulario y vuelva a registrar.", "Modo Edición", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione una reservación de la tabla para editar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnCambiarEstado_Click(object sender, EventArgs e)
+        {
+            if (dgvHabitaciones.SelectedRows.Count > 0)
+            {
+                var habitacionSeleccionada = dgvHabitaciones.SelectedRows[0].DataBoundItem as cModeloHabitaciones;
+                string nuevoEstado = cmbCambiarEstado.SelectedItem?.ToString(); // Asegúrate que el ComboBox de estados se llame cmbCambiarEstado
+
+                if (habitacionSeleccionada != null && !string.IsNullOrEmpty(nuevoEstado))
+                {
+                    habitacionSeleccionada.Estado = nuevoEstado;
+                    MessageBox.Show("¡Estado de la habitación actualizado con éxito!", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Refrescamos las tablas en todo el sistema para que reflejen el cambio al instante
+                    dgvHabitaciones.DataSource = null;
+                    dgvHabitaciones.DataSource = listas.listaHabitaciones;
+
+                    dvgHabitacionesPrecio.DataSource = null;
+                    dvgHabitacionesPrecio.DataSource = listas.listaHabitaciones;
+                }
+                else
+                {
+                    MessageBox.Show("Por favor, seleccione un estado válido en el menú desplegable.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione una habitación de la tabla.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void dgvHabitaciones_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow fila = dgvHabitaciones.Rows[e.RowIndex];
+                // Aquí puedes capturar datos si lo requieres visualmente
+            }
+        }
     }
 }
+

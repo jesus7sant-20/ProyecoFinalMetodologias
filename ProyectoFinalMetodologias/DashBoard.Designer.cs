@@ -80,24 +80,18 @@
             panel1 = new Panel();
             lblFormularioRegistroReservaciones = new Label();
             panelGestionHabitaciones = new Panel();
+            label1 = new Label();
+            cmbCambiarEstado = new ComboBox();
+            btnCambiarEstado = new Button();
             dgvHabitaciones = new DataGridView();
             panelSup4 = new Panel();
             lblListasHabitaciones = new Label();
             panelListaReservaciones = new Panel();
-            lblFiltrarFecha2 = new Label();
             lblFiltrarEstado2 = new Label();
             btnExportarExcel2 = new Button();
             btnCancelarReservacion = new Button();
             btnEditar = new Button();
             dataGridView2 = new DataGridView();
-            colIDReserva = new DataGridViewTextBoxColumn();
-            colCliente = new DataGridViewTextBoxColumn();
-            colHabitacion = new DataGridViewTextBoxColumn();
-            colEntrada = new DataGridViewTextBoxColumn();
-            colSalida = new DataGridViewTextBoxColumn();
-            colEstado = new DataGridViewTextBoxColumn();
-            colMonto = new DataGridViewTextBoxColumn();
-            comboBox2 = new ComboBox();
             comboBox1 = new ComboBox();
             btnBuscar = new Button();
             txtBuscador = new TextBox();
@@ -115,10 +109,6 @@
             txtReservacionesActivas = new TextBox();
             txtOcupacionActual = new TextBox();
             dataGridView1 = new DataGridView();
-            colFecha = new DataGridViewTextBoxColumn();
-            colReservaciones = new DataGridViewTextBoxColumn();
-            colCancelaciones = new DataGridViewTextBoxColumn();
-            colIngresos = new DataGridViewTextBoxColumn();
             btnExportarExcel = new Button();
             btnGenerarReporte = new Button();
             dateTimePicker2 = new DateTimePicker();
@@ -126,7 +116,20 @@
             panelSup2 = new Panel();
             lblReportesBasicos = new Label();
             panelAdministracionCostos = new Panel();
+            label11 = new Label();
+            label5 = new Label();
+            btnCancelarCambio = new Button();
+            btnCambiarPrecio = new Button();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            txtNuevoPrecio = new TextBox();
+            txtPrecioActual = new TextBox();
+            txtHabitacion = new TextBox();
+            dvgHabitacionesPrecio = new DataGridView();
             panelSup1 = new Panel();
+            label12 = new Label();
+            label6 = new Label();
             PanelMenu.SuspendLayout();
             panelRegistroReservacion.SuspendLayout();
             panel1.SuspendLayout();
@@ -140,6 +143,8 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panelSup2.SuspendLayout();
             panelAdministracionCostos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dvgHabitacionesPrecio).BeginInit();
+            panelSup1.SuspendLayout();
             SuspendLayout();
             // 
             // PanelMenu
@@ -163,7 +168,8 @@
             // 
             lblMenu.FlatStyle = FlatStyle.Flat;
             lblMenu.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblMenu.ForeColor = Color.Black;
+            lblMenu.ForeColor = Color.White;
+            lblMenu.Image = (Image)resources.GetObject("lblMenu.Image");
             lblMenu.ImageAlign = ContentAlignment.MiddleLeft;
             lblMenu.Location = new Point(47, 61);
             lblMenu.Name = "lblMenu";
@@ -174,74 +180,93 @@
             // 
             // btnSalir
             // 
+            btnSalir.BackColor = Color.FromArgb(224, 224, 224);
             btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.ForeColor = Color.Black;
+            btnSalir.Image = (Image)resources.GetObject("btnSalir.Image");
             btnSalir.ImageAlign = ContentAlignment.MiddleLeft;
             btnSalir.Location = new Point(13, 587);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(159, 33);
             btnSalir.TabIndex = 7;
             btnSalir.Text = "Salir";
-            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.UseVisualStyleBackColor = false;
             btnSalir.Click += btnSalir_Click;
             // 
             // btnCostos
             // 
+            btnCostos.BackColor = Color.FromArgb(224, 224, 224);
             btnCostos.FlatStyle = FlatStyle.Flat;
+            btnCostos.ForeColor = Color.Black;
+            btnCostos.Image = (Image)resources.GetObject("btnCostos.Image");
             btnCostos.ImageAlign = ContentAlignment.MiddleLeft;
             btnCostos.Location = new Point(13, 378);
             btnCostos.Name = "btnCostos";
             btnCostos.Size = new Size(159, 33);
             btnCostos.TabIndex = 6;
             btnCostos.Text = "Costos";
-            btnCostos.UseVisualStyleBackColor = true;
+            btnCostos.UseVisualStyleBackColor = false;
             btnCostos.Click += btnCostos_Click;
             // 
             // btnReportes
             // 
+            btnReportes.BackColor = Color.FromArgb(224, 224, 224);
             btnReportes.FlatStyle = FlatStyle.Flat;
+            btnReportes.ForeColor = Color.Black;
+            btnReportes.Image = (Image)resources.GetObject("btnReportes.Image");
             btnReportes.ImageAlign = ContentAlignment.MiddleLeft;
             btnReportes.Location = new Point(13, 310);
             btnReportes.Name = "btnReportes";
             btnReportes.Size = new Size(159, 33);
             btnReportes.TabIndex = 5;
             btnReportes.Text = "Reportes";
-            btnReportes.UseVisualStyleBackColor = true;
+            btnReportes.UseVisualStyleBackColor = false;
             btnReportes.Click += btnReportes_Click;
             // 
             // btnReservaciones
             // 
+            btnReservaciones.BackColor = Color.FromArgb(224, 224, 224);
             btnReservaciones.FlatStyle = FlatStyle.Flat;
+            btnReservaciones.ForeColor = Color.Black;
+            btnReservaciones.Image = (Image)resources.GetObject("btnReservaciones.Image");
             btnReservaciones.ImageAlign = ContentAlignment.MiddleLeft;
             btnReservaciones.Location = new Point(13, 240);
             btnReservaciones.Name = "btnReservaciones";
             btnReservaciones.Size = new Size(159, 33);
             btnReservaciones.TabIndex = 4;
             btnReservaciones.Text = "Reservaciones";
-            btnReservaciones.UseVisualStyleBackColor = true;
+            btnReservaciones.UseVisualStyleBackColor = false;
             btnReservaciones.Click += btnReservaciones_Click;
             // 
             // btnHabitaciones
             // 
+            btnHabitaciones.BackColor = Color.FromArgb(224, 224, 224);
             btnHabitaciones.FlatStyle = FlatStyle.Flat;
+            btnHabitaciones.ForeColor = Color.Black;
+            btnHabitaciones.Image = (Image)resources.GetObject("btnHabitaciones.Image");
             btnHabitaciones.ImageAlign = ContentAlignment.MiddleLeft;
             btnHabitaciones.Location = new Point(13, 170);
             btnHabitaciones.Name = "btnHabitaciones";
             btnHabitaciones.Size = new Size(159, 33);
             btnHabitaciones.TabIndex = 3;
             btnHabitaciones.Text = "Habitaciones";
-            btnHabitaciones.UseVisualStyleBackColor = true;
+            btnHabitaciones.UseVisualStyleBackColor = false;
             btnHabitaciones.Click += btnHabitaciones_Click;
             // 
             // btnRegistros
             // 
+            btnRegistros.BackColor = Color.FromArgb(224, 224, 224);
             btnRegistros.FlatStyle = FlatStyle.Flat;
+            btnRegistros.ForeColor = Color.Black;
+            btnRegistros.Image = (Image)resources.GetObject("btnRegistros.Image");
             btnRegistros.ImageAlign = ContentAlignment.MiddleLeft;
             btnRegistros.Location = new Point(13, 104);
             btnRegistros.Name = "btnRegistros";
             btnRegistros.Size = new Size(159, 33);
             btnRegistros.TabIndex = 1;
             btnRegistros.Text = "Registro";
-            btnRegistros.UseVisualStyleBackColor = true;
+            btnRegistros.UseVisualStyleBackColor = false;
+            btnRegistros.Click += btnRegistros_Click_1;
             // 
             // lblNombreSistema
             // 
@@ -249,7 +274,7 @@
             lblNombreSistema.BackColor = Color.Transparent;
             lblNombreSistema.FlatStyle = FlatStyle.Popup;
             lblNombreSistema.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblNombreSistema.ForeColor = Color.Black;
+            lblNombreSistema.ForeColor = Color.White;
             lblNombreSistema.Location = new Point(3, 17);
             lblNombreSistema.Name = "lblNombreSistema";
             lblNombreSistema.Size = new Size(179, 23);
@@ -258,7 +283,7 @@
             // 
             // panelRegistroReservacion
             // 
-            panelRegistroReservacion.BackColor = Color.FromArgb(127, 140, 141);
+            panelRegistroReservacion.BackColor = Color.LightGray;
             panelRegistroReservacion.BorderStyle = BorderStyle.FixedSingle;
             panelRegistroReservacion.Controls.Add(lblNoINEPasaporte2);
             panelRegistroReservacion.Controls.Add(lblTipoIdentificacion2);
@@ -422,6 +447,7 @@
             // 
             // txtTipoHabitacion
             // 
+            txtTipoHabitacion.BorderStyle = BorderStyle.FixedSingle;
             txtTipoHabitacion.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtTipoHabitacion.Location = new Point(619, 119);
             txtTipoHabitacion.Name = "txtTipoHabitacion";
@@ -430,6 +456,7 @@
             // 
             // cmbEstadoPago
             // 
+            cmbEstadoPago.FlatStyle = FlatStyle.System;
             cmbEstadoPago.FormattingEnabled = true;
             cmbEstadoPago.Items.AddRange(new object[] { "Pagado", "Pendiente" });
             cmbEstadoPago.Location = new Point(184, 549);
@@ -439,6 +466,7 @@
             // 
             // txtNumNoches
             // 
+            txtNumNoches.BorderStyle = BorderStyle.FixedSingle;
             txtNumNoches.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtNumNoches.Location = new Point(664, 326);
             txtNumNoches.Name = "txtNumNoches";
@@ -496,6 +524,7 @@
             btnCancelar.BackColor = Color.FromArgb(44, 62, 80);
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Franklin Gothic Medium", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCancelar.ForeColor = Color.White;
             btnCancelar.Location = new Point(494, 601);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(140, 32);
@@ -508,6 +537,7 @@
             btnRegistrar.BackColor = Color.FromArgb(44, 62, 80);
             btnRegistrar.FlatStyle = FlatStyle.Flat;
             btnRegistrar.Font = new Font("Franklin Gothic Medium", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRegistrar.ForeColor = Color.White;
             btnRegistrar.Location = new Point(657, 601);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(140, 32);
@@ -518,6 +548,7 @@
             // 
             // txtNotasHuesped
             // 
+            txtNotasHuesped.BorderStyle = BorderStyle.FixedSingle;
             txtNotasHuesped.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtNotasHuesped.Location = new Point(453, 532);
             txtNotasHuesped.Multiline = true;
@@ -527,6 +558,7 @@
             // 
             // txtSolicitudesEspeciales
             // 
+            txtSolicitudesEspeciales.BorderStyle = BorderStyle.FixedSingle;
             txtSolicitudesEspeciales.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtSolicitudesEspeciales.Location = new Point(451, 450);
             txtSolicitudesEspeciales.Multiline = true;
@@ -536,6 +568,7 @@
             // 
             // txtEstado
             // 
+            txtEstado.BorderStyle = BorderStyle.FixedSingle;
             txtEstado.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtEstado.Location = new Point(630, 203);
             txtEstado.Name = "txtEstado";
@@ -544,6 +577,7 @@
             // 
             // txtMontoTotal
             // 
+            txtMontoTotal.BorderStyle = BorderStyle.FixedSingle;
             txtMontoTotal.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtMontoTotal.Location = new Point(184, 498);
             txtMontoTotal.Name = "txtMontoTotal";
@@ -552,6 +586,7 @@
             // 
             // cmbMetodoPago
             // 
+            cmbMetodoPago.FlatStyle = FlatStyle.System;
             cmbMetodoPago.FormattingEnabled = true;
             cmbMetodoPago.Items.AddRange(new object[] { "Efectivo", "Tarjeta", "Transferencia" });
             cmbMetodoPago.Location = new Point(178, 447);
@@ -614,6 +649,7 @@
             // 
             // cmbnumeroHabitacion
             // 
+            cmbnumeroHabitacion.FlatStyle = FlatStyle.System;
             cmbnumeroHabitacion.FormattingEnabled = true;
             cmbnumeroHabitacion.Location = new Point(621, 162);
             cmbnumeroHabitacion.Name = "cmbnumeroHabitacion";
@@ -636,6 +672,7 @@
             // 
             // cmbTipoIdentifiacion
             // 
+            cmbTipoIdentifiacion.FlatStyle = FlatStyle.System;
             cmbTipoIdentifiacion.FormattingEnabled = true;
             cmbTipoIdentifiacion.Items.AddRange(new object[] { "INE", "Pasaporte" });
             cmbTipoIdentifiacion.Location = new Point(197, 248);
@@ -645,6 +682,7 @@
             // 
             // txtNumeroIdentificaion
             // 
+            txtNumeroIdentificaion.BorderStyle = BorderStyle.FixedSingle;
             txtNumeroIdentificaion.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtNumeroIdentificaion.Location = new Point(197, 294);
             txtNumeroIdentificaion.Name = "txtNumeroIdentificaion";
@@ -653,6 +691,7 @@
             // 
             // txtCorreo
             // 
+            txtCorreo.BorderStyle = BorderStyle.FixedSingle;
             txtCorreo.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtCorreo.Location = new Point(197, 203);
             txtCorreo.Name = "txtCorreo";
@@ -661,6 +700,7 @@
             // 
             // txtTelefono
             // 
+            txtTelefono.BorderStyle = BorderStyle.FixedSingle;
             txtTelefono.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtTelefono.Location = new Point(197, 158);
             txtTelefono.Name = "txtTelefono";
@@ -669,6 +709,7 @@
             // 
             // txtNombre
             // 
+            txtNombre.BorderStyle = BorderStyle.FixedSingle;
             txtNombre.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtNombre.Location = new Point(197, 115);
             txtNombre.Name = "txtNombre";
@@ -686,21 +727,27 @@
             // 
             // lblFormularioRegistroReservaciones
             // 
-            lblFormularioRegistroReservaciones.AutoSize = true;
             lblFormularioRegistroReservaciones.BackColor = Color.Transparent;
             lblFormularioRegistroReservaciones.FlatStyle = FlatStyle.Popup;
             lblFormularioRegistroReservaciones.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblFormularioRegistroReservaciones.ForeColor = Color.Black;
-            lblFormularioRegistroReservaciones.Location = new Point(45, 20);
+            lblFormularioRegistroReservaciones.ForeColor = Color.White;
+            lblFormularioRegistroReservaciones.Image = (Image)resources.GetObject("lblFormularioRegistroReservaciones.Image");
+            lblFormularioRegistroReservaciones.ImageAlign = ContentAlignment.MiddleLeft;
+            lblFormularioRegistroReservaciones.Location = new Point(40, 13);
             lblFormularioRegistroReservaciones.Name = "lblFormularioRegistroReservaciones";
-            lblFormularioRegistroReservaciones.Size = new Size(436, 23);
+            lblFormularioRegistroReservaciones.Size = new Size(473, 36);
             lblFormularioRegistroReservaciones.TabIndex = 9;
             lblFormularioRegistroReservaciones.Text = "FORMULARIO DE REGISTRO DE RESERVACIONES";
+            lblFormularioRegistroReservaciones.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panelGestionHabitaciones
             // 
-            panelGestionHabitaciones.BackColor = Color.FromArgb(127, 140, 141);
+            panelGestionHabitaciones.BackColor = Color.LightGray;
             panelGestionHabitaciones.BorderStyle = BorderStyle.FixedSingle;
+            panelGestionHabitaciones.Controls.Add(label6);
+            panelGestionHabitaciones.Controls.Add(label1);
+            panelGestionHabitaciones.Controls.Add(cmbCambiarEstado);
+            panelGestionHabitaciones.Controls.Add(btnCambiarEstado);
             panelGestionHabitaciones.Controls.Add(dgvHabitaciones);
             panelGestionHabitaciones.Controls.Add(panelSup4);
             panelGestionHabitaciones.Location = new Point(194, 0);
@@ -708,14 +755,49 @@
             panelGestionHabitaciones.Size = new Size(839, 643);
             panelGestionHabitaciones.TabIndex = 2;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(599, 211);
+            label1.Name = "label1";
+            label1.Size = new Size(134, 19);
+            label1.TabIndex = 5;
+            label1.Text = "CAMBIAR ESTADO:";
+            // 
+            // cmbCambiarEstado
+            // 
+            cmbCambiarEstado.BackColor = Color.White;
+            cmbCambiarEstado.FormattingEnabled = true;
+            cmbCambiarEstado.Items.AddRange(new object[] { "Limpieza", "Mantenimiento", "Ocupada", "Libre" });
+            cmbCambiarEstado.Location = new Point(575, 270);
+            cmbCambiarEstado.Name = "cmbCambiarEstado";
+            cmbCambiarEstado.Size = new Size(179, 23);
+            cmbCambiarEstado.TabIndex = 4;
+            // 
+            // btnCambiarEstado
+            // 
+            btnCambiarEstado.BackColor = Color.FromArgb(44, 62, 80);
+            btnCambiarEstado.FlatStyle = FlatStyle.Flat;
+            btnCambiarEstado.ForeColor = Color.White;
+            btnCambiarEstado.Location = new Point(604, 335);
+            btnCambiarEstado.Name = "btnCambiarEstado";
+            btnCambiarEstado.Size = new Size(134, 24);
+            btnCambiarEstado.TabIndex = 3;
+            btnCambiarEstado.Text = "CAMBIAR";
+            btnCambiarEstado.UseVisualStyleBackColor = false;
+            btnCambiarEstado.Click += btnCambiarEstado_Click;
+            // 
             // dgvHabitaciones
             // 
             dgvHabitaciones.AllowUserToOrderColumns = true;
+            dgvHabitaciones.BackgroundColor = Color.White;
             dgvHabitaciones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvHabitaciones.Location = new Point(117, 163);
+            dgvHabitaciones.Location = new Point(64, 165);
             dgvHabitaciones.Name = "dgvHabitaciones";
-            dgvHabitaciones.Size = new Size(614, 396);
+            dgvHabitaciones.Size = new Size(468, 396);
             dgvHabitaciones.TabIndex = 2;
+            dgvHabitaciones.CellClick += dgvHabitaciones_CellClick;
             // 
             // panelSup4
             // 
@@ -731,7 +813,7 @@
             lblListasHabitaciones.BackColor = Color.Transparent;
             lblListasHabitaciones.FlatStyle = FlatStyle.Popup;
             lblListasHabitaciones.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblListasHabitaciones.ForeColor = Color.Black;
+            lblListasHabitaciones.ForeColor = Color.White;
             lblListasHabitaciones.Image = (Image)resources.GetObject("lblListasHabitaciones.Image");
             lblListasHabitaciones.ImageAlign = ContentAlignment.MiddleLeft;
             lblListasHabitaciones.Location = new Point(15, 17);
@@ -743,15 +825,13 @@
             // 
             // panelListaReservaciones
             // 
-            panelListaReservaciones.BackColor = Color.FromArgb(127, 140, 141);
+            panelListaReservaciones.BackColor = Color.LightGray;
             panelListaReservaciones.BorderStyle = BorderStyle.FixedSingle;
-            panelListaReservaciones.Controls.Add(lblFiltrarFecha2);
             panelListaReservaciones.Controls.Add(lblFiltrarEstado2);
             panelListaReservaciones.Controls.Add(btnExportarExcel2);
             panelListaReservaciones.Controls.Add(btnCancelarReservacion);
             panelListaReservaciones.Controls.Add(btnEditar);
             panelListaReservaciones.Controls.Add(dataGridView2);
-            panelListaReservaciones.Controls.Add(comboBox2);
             panelListaReservaciones.Controls.Add(comboBox1);
             panelListaReservaciones.Controls.Add(btnBuscar);
             panelListaReservaciones.Controls.Add(txtBuscador);
@@ -760,16 +840,6 @@
             panelListaReservaciones.Name = "panelListaReservaciones";
             panelListaReservaciones.Size = new Size(839, 643);
             panelListaReservaciones.TabIndex = 2;
-            // 
-            // lblFiltrarFecha2
-            // 
-            lblFiltrarFecha2.AutoSize = true;
-            lblFiltrarFecha2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblFiltrarFecha2.Location = new Point(241, 137);
-            lblFiltrarFecha2.Name = "lblFiltrarFecha2";
-            lblFiltrarFecha2.Size = new Size(149, 21);
-            lblFiltrarFecha2.TabIndex = 55;
-            lblFiltrarFecha2.Text = "Filtrar por Fecha: ";
             // 
             // lblFiltrarEstado2
             // 
@@ -783,92 +853,60 @@
             // 
             // btnExportarExcel2
             // 
+            btnExportarExcel2.BackColor = Color.FromArgb(44, 62, 80);
+            btnExportarExcel2.FlatStyle = FlatStyle.Flat;
+            btnExportarExcel2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnExportarExcel2.ForeColor = Color.White;
             btnExportarExcel2.Location = new Point(327, 546);
             btnExportarExcel2.Name = "btnExportarExcel2";
             btnExportarExcel2.Size = new Size(160, 35);
             btnExportarExcel2.TabIndex = 11;
             btnExportarExcel2.Text = "Exportar Excel";
-            btnExportarExcel2.UseVisualStyleBackColor = true;
+            btnExportarExcel2.UseVisualStyleBackColor = false;
+            btnExportarExcel2.Click += btnExportarExcel2_Click;
             // 
             // btnCancelarReservacion
             // 
+            btnCancelarReservacion.BackColor = Color.FromArgb(44, 62, 80);
+            btnCancelarReservacion.FlatStyle = FlatStyle.Flat;
+            btnCancelarReservacion.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnCancelarReservacion.ForeColor = Color.White;
             btnCancelarReservacion.Location = new Point(130, 546);
             btnCancelarReservacion.Name = "btnCancelarReservacion";
             btnCancelarReservacion.Size = new Size(180, 35);
             btnCancelarReservacion.TabIndex = 10;
-            btnCancelarReservacion.Text = "Cancelar Reservacion";
-            btnCancelarReservacion.UseVisualStyleBackColor = true;
+            btnCancelarReservacion.Text = "Liberar Habitacion";
+            btnCancelarReservacion.UseVisualStyleBackColor = false;
             btnCancelarReservacion.Click += btnCancelarReservacion_Click;
             // 
             // btnEditar
             // 
+            btnEditar.BackColor = Color.FromArgb(44, 62, 80);
+            btnEditar.FlatStyle = FlatStyle.Flat;
+            btnEditar.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnEditar.ForeColor = Color.White;
             btnEditar.Location = new Point(11, 546);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(100, 35);
             btnEditar.TabIndex = 9;
             btnEditar.Text = "Editar";
-            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.UseVisualStyleBackColor = false;
+            btnEditar.Click += btnEditar_Click;
             // 
             // dataGridView2
             // 
+            dataGridView2.BackgroundColor = Color.White;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { colIDReserva, colCliente, colHabitacion, colEntrada, colSalida, colEstado, colMonto });
             dataGridView2.Location = new Point(8, 240);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.Size = new Size(818, 297);
             dataGridView2.TabIndex = 8;
             // 
-            // colIDReserva
-            // 
-            colIDReserva.HeaderText = "ID Reserva";
-            colIDReserva.Name = "colIDReserva";
-            colIDReserva.Width = 65;
-            // 
-            // colCliente
-            // 
-            colCliente.HeaderText = "Cliente";
-            colCliente.Name = "colCliente";
-            colCliente.Width = 170;
-            // 
-            // colHabitacion
-            // 
-            colHabitacion.HeaderText = "Habitación ";
-            colHabitacion.Name = "colHabitacion";
-            colHabitacion.Width = 80;
-            // 
-            // colEntrada
-            // 
-            colEntrada.HeaderText = "Fecha Entrada";
-            colEntrada.Name = "colEntrada";
-            colEntrada.Width = 130;
-            // 
-            // colSalida
-            // 
-            colSalida.HeaderText = "Fecha Salida";
-            colSalida.Name = "colSalida";
-            colSalida.Width = 130;
-            // 
-            // colEstado
-            // 
-            colEstado.HeaderText = "Estado";
-            colEstado.Name = "colEstado";
-            // 
-            // colMonto
-            // 
-            colMonto.HeaderText = "Monto";
-            colMonto.Name = "colMonto";
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(241, 164);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 7;
-            // 
             // comboBox1
             // 
+            comboBox1.FlatStyle = FlatStyle.System;
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Pagado", "Pendiente" });
             comboBox1.Location = new Point(44, 164);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(121, 23);
@@ -876,16 +914,21 @@
             // 
             // btnBuscar
             // 
-            btnBuscar.Location = new Point(350, 80);
+            btnBuscar.BackColor = Color.FromArgb(44, 62, 80);
+            btnBuscar.FlatStyle = FlatStyle.Flat;
+            btnBuscar.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBuscar.ForeColor = Color.White;
+            btnBuscar.Location = new Point(350, 76);
             btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(100, 23);
+            btnBuscar.Size = new Size(100, 32);
             btnBuscar.TabIndex = 3;
             btnBuscar.Text = "Buscar";
-            btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.UseVisualStyleBackColor = false;
             btnBuscar.Click += btnBuscar_Click;
             // 
             // txtBuscador
             // 
+            txtBuscador.BorderStyle = BorderStyle.FixedSingle;
             txtBuscador.Location = new Point(44, 80);
             txtBuscador.Name = "txtBuscador";
             txtBuscador.Size = new Size(300, 23);
@@ -915,7 +958,7 @@
             // 
             // panelReportesBasicos
             // 
-            panelReportesBasicos.BackColor = Color.FromArgb(127, 140, 141);
+            panelReportesBasicos.BackColor = Color.LightGray;
             panelReportesBasicos.BorderStyle = BorderStyle.FixedSingle;
             panelReportesBasicos.Controls.Add(lblIngresosDia2);
             panelReportesBasicos.Controls.Add(lblCancelaciones2);
@@ -942,7 +985,7 @@
             // 
             lblIngresosDia2.AutoSize = true;
             lblIngresosDia2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblIngresosDia2.Location = new Point(654, 104);
+            lblIngresosDia2.Location = new Point(630, 104);
             lblIngresosDia2.Name = "lblIngresosDia2";
             lblIngresosDia2.Size = new Size(143, 21);
             lblIngresosDia2.TabIndex = 56;
@@ -952,7 +995,7 @@
             // 
             lblCancelaciones2.AutoSize = true;
             lblCancelaciones2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblCancelaciones2.Location = new Point(491, 104);
+            lblCancelaciones2.Location = new Point(473, 104);
             lblCancelaciones2.Name = "lblCancelaciones2";
             lblCancelaciones2.Size = new Size(120, 21);
             lblCancelaciones2.TabIndex = 55;
@@ -982,7 +1025,7 @@
             // 
             lblReservacionesActivas2.AutoSize = true;
             lblReservacionesActivas2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblReservacionesActivas2.Location = new Point(278, 104);
+            lblReservacionesActivas2.Location = new Point(260, 104);
             lblReservacionesActivas2.Name = "lblReservacionesActivas2";
             lblReservacionesActivas2.Size = new Size(181, 21);
             lblReservacionesActivas2.TabIndex = 50;
@@ -992,7 +1035,7 @@
             // 
             lblOcupacionActual2.AutoSize = true;
             lblOcupacionActual2.Font = new Font("Comic Sans MS", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblOcupacionActual2.Location = new Point(79, 104);
+            lblOcupacionActual2.Location = new Point(73, 104);
             lblOcupacionActual2.Name = "lblOcupacionActual2";
             lblOcupacionActual2.Size = new Size(142, 21);
             lblOcupacionActual2.TabIndex = 49;
@@ -1000,6 +1043,7 @@
             // 
             // txtIngresos
             // 
+            txtIngresos.BorderStyle = BorderStyle.FixedSingle;
             txtIngresos.Location = new Point(653, 128);
             txtIngresos.Name = "txtIngresos";
             txtIngresos.Size = new Size(93, 23);
@@ -1007,6 +1051,7 @@
             // 
             // txtCancelaciones
             // 
+            txtCancelaciones.BorderStyle = BorderStyle.FixedSingle;
             txtCancelaciones.Location = new Point(491, 128);
             txtCancelaciones.Name = "txtCancelaciones";
             txtCancelaciones.Size = new Size(89, 23);
@@ -1014,6 +1059,7 @@
             // 
             // txtReservacionesActivas
             // 
+            txtReservacionesActivas.BorderStyle = BorderStyle.FixedSingle;
             txtReservacionesActivas.Location = new Point(278, 128);
             txtReservacionesActivas.Name = "txtReservacionesActivas";
             txtReservacionesActivas.Size = new Size(128, 23);
@@ -1021,6 +1067,7 @@
             // 
             // txtOcupacionActual
             // 
+            txtOcupacionActual.BorderStyle = BorderStyle.FixedSingle;
             txtOcupacionActual.Location = new Point(83, 128);
             txtOcupacionActual.Name = "txtOcupacionActual";
             txtOcupacionActual.Size = new Size(108, 23);
@@ -1028,54 +1075,39 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = Color.White;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { colFecha, colReservaciones, colCancelaciones, colIngresos });
             dataGridView1.Location = new Point(83, 216);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(663, 257);
             dataGridView1.TabIndex = 12;
             // 
-            // colFecha
-            // 
-            colFecha.HeaderText = "Fecha";
-            colFecha.Name = "colFecha";
-            colFecha.Width = 120;
-            // 
-            // colReservaciones
-            // 
-            colReservaciones.HeaderText = "Reservaciones";
-            colReservaciones.Name = "colReservaciones";
-            colReservaciones.Width = 150;
-            // 
-            // colCancelaciones
-            // 
-            colCancelaciones.HeaderText = "Cancelaciones";
-            colCancelaciones.Name = "colCancelaciones";
-            colCancelaciones.Width = 150;
-            // 
-            // colIngresos
-            // 
-            colIngresos.HeaderText = "Ingresos";
-            colIngresos.Name = "colIngresos";
-            colIngresos.Width = 200;
-            // 
             // btnExportarExcel
             // 
+            btnExportarExcel.BackColor = Color.FromArgb(44, 62, 80);
+            btnExportarExcel.FlatStyle = FlatStyle.Flat;
+            btnExportarExcel.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnExportarExcel.ForeColor = Color.White;
             btnExportarExcel.Location = new Point(425, 587);
             btnExportarExcel.Name = "btnExportarExcel";
-            btnExportarExcel.Size = new Size(107, 25);
+            btnExportarExcel.Size = new Size(107, 33);
             btnExportarExcel.TabIndex = 11;
             btnExportarExcel.Text = "Exportar Excel";
-            btnExportarExcel.UseVisualStyleBackColor = true;
+            btnExportarExcel.UseVisualStyleBackColor = false;
+            btnExportarExcel.Click += btnExportarExcel_Click;
             // 
             // btnGenerarReporte
             // 
+            btnGenerarReporte.BackColor = Color.FromArgb(44, 62, 80);
+            btnGenerarReporte.FlatStyle = FlatStyle.Flat;
+            btnGenerarReporte.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnGenerarReporte.ForeColor = Color.White;
             btnGenerarReporte.Location = new Point(312, 587);
             btnGenerarReporte.Name = "btnGenerarReporte";
-            btnGenerarReporte.Size = new Size(107, 25);
+            btnGenerarReporte.Size = new Size(107, 33);
             btnGenerarReporte.TabIndex = 10;
             btnGenerarReporte.Text = "  Generar Reporte";
-            btnGenerarReporte.UseVisualStyleBackColor = true;
+            btnGenerarReporte.UseVisualStyleBackColor = false;
             btnGenerarReporte.Click += btnGenerarReporte_Click;
             // 
             // dateTimePicker2
@@ -1118,21 +1150,167 @@
             // 
             // panelAdministracionCostos
             // 
-            panelAdministracionCostos.BackColor = Color.FromArgb(127, 140, 141);
+            panelAdministracionCostos.BackColor = Color.LightGray;
             panelAdministracionCostos.BorderStyle = BorderStyle.FixedSingle;
+            panelAdministracionCostos.Controls.Add(label11);
+            panelAdministracionCostos.Controls.Add(label5);
+            panelAdministracionCostos.Controls.Add(btnCancelarCambio);
+            panelAdministracionCostos.Controls.Add(btnCambiarPrecio);
+            panelAdministracionCostos.Controls.Add(label4);
+            panelAdministracionCostos.Controls.Add(label3);
+            panelAdministracionCostos.Controls.Add(label2);
+            panelAdministracionCostos.Controls.Add(txtNuevoPrecio);
+            panelAdministracionCostos.Controls.Add(txtPrecioActual);
+            panelAdministracionCostos.Controls.Add(txtHabitacion);
+            panelAdministracionCostos.Controls.Add(dvgHabitacionesPrecio);
             panelAdministracionCostos.Controls.Add(panelSup1);
             panelAdministracionCostos.Location = new Point(194, 0);
             panelAdministracionCostos.Name = "panelAdministracionCostos";
             panelAdministracionCostos.Size = new Size(839, 643);
             panelAdministracionCostos.TabIndex = 2;
             // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.Location = new Point(172, 118);
+            label11.Name = "label11";
+            label11.Size = new Size(187, 21);
+            label11.TabIndex = 11;
+            label11.Text = "Datos de la Habitacion:";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(519, 124);
+            label5.Name = "label5";
+            label5.Size = new Size(266, 21);
+            label5.TabIndex = 10;
+            label5.Text = "Actualizar Precio de Habitaciones";
+            // 
+            // btnCancelarCambio
+            // 
+            btnCancelarCambio.BackColor = Color.FromArgb(44, 62, 80);
+            btnCancelarCambio.FlatStyle = FlatStyle.Flat;
+            btnCancelarCambio.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnCancelarCambio.ForeColor = Color.White;
+            btnCancelarCambio.Location = new Point(599, 436);
+            btnCancelarCambio.Name = "btnCancelarCambio";
+            btnCancelarCambio.Size = new Size(117, 32);
+            btnCancelarCambio.TabIndex = 9;
+            btnCancelarCambio.Text = "Cancelar";
+            btnCancelarCambio.UseVisualStyleBackColor = false;
+            btnCancelarCambio.Click += btnCancelarCambio_Click;
+            // 
+            // btnCambiarPrecio
+            // 
+            btnCambiarPrecio.BackColor = Color.FromArgb(44, 62, 80);
+            btnCambiarPrecio.FlatStyle = FlatStyle.Flat;
+            btnCambiarPrecio.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnCambiarPrecio.ForeColor = Color.White;
+            btnCambiarPrecio.Location = new Point(599, 391);
+            btnCambiarPrecio.Name = "btnCambiarPrecio";
+            btnCambiarPrecio.Size = new Size(117, 32);
+            btnCambiarPrecio.TabIndex = 8;
+            btnCambiarPrecio.Text = "Cambiar Precio";
+            btnCambiarPrecio.UseVisualStyleBackColor = false;
+            btnCambiarPrecio.Click += btnCambiarPrecio_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label4.Location = new Point(517, 335);
+            label4.Name = "label4";
+            label4.Size = new Size(85, 15);
+            label4.TabIndex = 7;
+            label4.Text = "Nuevo Precio:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label3.Location = new Point(510, 270);
+            label3.Name = "label3";
+            label3.Size = new Size(83, 15);
+            label3.TabIndex = 6;
+            label3.Text = "Precio Actual:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label2.Location = new Point(510, 194);
+            label2.Name = "label2";
+            label2.Size = new Size(69, 15);
+            label2.TabIndex = 5;
+            label2.Text = "Habitacion:";
+            // 
+            // txtNuevoPrecio
+            // 
+            txtNuevoPrecio.Location = new Point(604, 332);
+            txtNuevoPrecio.Name = "txtNuevoPrecio";
+            txtNuevoPrecio.Size = new Size(166, 23);
+            txtNuevoPrecio.TabIndex = 4;
+            // 
+            // txtPrecioActual
+            // 
+            txtPrecioActual.Location = new Point(604, 262);
+            txtPrecioActual.Name = "txtPrecioActual";
+            txtPrecioActual.Size = new Size(166, 23);
+            txtPrecioActual.TabIndex = 3;
+            // 
+            // txtHabitacion
+            // 
+            txtHabitacion.Location = new Point(604, 191);
+            txtHabitacion.Name = "txtHabitacion";
+            txtHabitacion.Size = new Size(166, 23);
+            txtHabitacion.TabIndex = 2;
+            // 
+            // dvgHabitacionesPrecio
+            // 
+            dvgHabitacionesPrecio.BackgroundColor = Color.White;
+            dvgHabitacionesPrecio.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dvgHabitacionesPrecio.Location = new Point(39, 161);
+            dvgHabitacionesPrecio.Name = "dvgHabitacionesPrecio";
+            dvgHabitacionesPrecio.Size = new Size(441, 365);
+            dvgHabitacionesPrecio.TabIndex = 1;
+            dvgHabitacionesPrecio.CellClick += dvgHabitacionesPrecio_CellClick;
+            // 
             // panelSup1
             // 
             panelSup1.BackColor = Color.FromArgb(44, 62, 80);
+            panelSup1.Controls.Add(label12);
             panelSup1.Location = new Point(-1, -1);
             panelSup1.Name = "panelSup1";
             panelSup1.Size = new Size(839, 62);
             panelSup1.TabIndex = 0;
+            // 
+            // label12
+            // 
+            label12.BackColor = Color.Transparent;
+            label12.FlatStyle = FlatStyle.Popup;
+            label12.Font = new Font("Franklin Gothic Medium", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.ForeColor = Color.White;
+            label12.Image = (Image)resources.GetObject("label12.Image");
+            label12.ImageAlign = ContentAlignment.MiddleLeft;
+            label12.Location = new Point(21, 9);
+            label12.Name = "label12";
+            label12.Size = new Size(304, 36);
+            label12.TabIndex = 9;
+            label12.Text = "ADMINISTRACION DE COSTOS";
+            label12.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(228, 129);
+            label6.Name = "label6";
+            label6.Size = new Size(110, 19);
+            label6.TabIndex = 6;
+            label6.Text = "HABITACIONES";
             // 
             // DashBoard
             // 
@@ -1140,10 +1318,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1033, 649);
-            Controls.Add(panelReportesBasicos);
             Controls.Add(panelRegistroReservacion);
-            Controls.Add(panelAdministracionCostos);
             Controls.Add(panelListaReservaciones);
+            Controls.Add(panelReportesBasicos);
+            Controls.Add(panelAdministracionCostos);
             Controls.Add(panelGestionHabitaciones);
             Controls.Add(PanelMenu);
             Margin = new Padding(2);
@@ -1156,8 +1334,8 @@
             panelRegistroReservacion.ResumeLayout(false);
             panelRegistroReservacion.PerformLayout();
             panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             panelGestionHabitaciones.ResumeLayout(false);
+            panelGestionHabitaciones.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvHabitaciones).EndInit();
             panelSup4.ResumeLayout(false);
             panelListaReservaciones.ResumeLayout(false);
@@ -1171,6 +1349,9 @@
             panelSup2.ResumeLayout(false);
             panelSup2.PerformLayout();
             panelAdministracionCostos.ResumeLayout(false);
+            panelAdministracionCostos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dvgHabitacionesPrecio).EndInit();
+            panelSup1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -1206,10 +1387,6 @@
         private DateTimePicker dateTimePicker2;
         private DateTimePicker dateTimePicker1;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn colFecha;
-        private DataGridViewTextBoxColumn colReservaciones;
-        private DataGridViewTextBoxColumn colCancelaciones;
-        private DataGridViewTextBoxColumn colIngresos;
         private TextBox txtIngresos;
         private TextBox txtCancelaciones;
         private TextBox txtReservacionesActivas;
@@ -1220,18 +1397,10 @@
         private Label label9;
         private Button btnBuscar;
         private DataGridView dataGridView2;
-        private ComboBox comboBox2;
         private ComboBox comboBox1;
         private Button btnExportarExcel2;
         private Button btnCancelarReservacion;
         private Button btnEditar;
-        private DataGridViewTextBoxColumn colIDReserva;
-        private DataGridViewTextBoxColumn colCliente;
-        private DataGridViewTextBoxColumn colHabitacion;
-        private DataGridViewTextBoxColumn colEntrada;
-        private DataGridViewTextBoxColumn colSalida;
-        private DataGridViewTextBoxColumn colEstado;
-        private DataGridViewTextBoxColumn colMonto;
         private TextBox txtNombre;
         private TextBox txtCorreo;
         private TextBox txtTelefono;
@@ -1281,11 +1450,24 @@
         private Label label3;
         private Label lblReservacionesActivas2;
         private Label lblOcupacionActual2;
-        private Label lblFiltrarFecha2;
         private Label lblFiltrarEstado2;
         private Label lblHasta2;
         private Label lblDesde2;
         private Label lblIngresosDia2;
         private Label lblCancelaciones2;
+        private Label label1;
+        private ComboBox cmbCambiarEstado;
+        private Button btnCambiarEstado;
+        private Label label4;
+        private Label label2;
+        private TextBox txtNuevoPrecio;
+        private TextBox txtPrecioActual;
+        private TextBox txtHabitacion;
+        private DataGridView dvgHabitacionesPrecio;
+        private Label label5;
+        private Button btnCancelarCambio;
+        private Button btnCambiarPrecio;
+        private Label label11;
+        private Label label12;
     }
 }
